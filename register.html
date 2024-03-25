@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Register</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/custom.css" />
+</head>
+
+<body class="text-white bg-[#F5F6F6]">
+    <div id="header-content"></div>
+
+    <section>
+        <div class="relative sm:top-[60px] top-[40px] left-0 sm:pb-[60px] pb-[40px]">
+            <div class="sm:py-16">
+                <div
+                    class="relative xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                    <div class="flex sm:shadow-[0px_12px_12px_0px_#0000001A] rounded-[20px] sm:bg-white">
+                        <div class="lg:min-w-[400px] md:min-w-[345px] relative md:block hidden">
+                            <img src="./images/register/image.svg" alt="" class="w-full">
+                            <div
+                                class="absolute text-center top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-white">
+                                <h3
+                                    class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto uppercase text-white">
+                                    welcome
+                                </h3>
+                                <h3
+                                    class="mt-1 font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-xl sm:text-lg text-sm font-[300] sm:text-nowrap">
+                                    to Datumsky
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="w-full lg:py-16 md:py-10 sm:py-16 py-10 sm:px-0 px-9">
+                            <div
+                                class="text-[#666666] text-center flex flex-col justify-center items-center lg:gap-10 gap-8">
+                                <h1 class="md:text-2xl font-black lg:text-3xl text-[#66CDF1] uppercase text-xl">
+                                    nhận tư vấn
+                                </h1>
+                                <form action="#" id="register" class="w-full xl:w-3/5 sm:w-4/5">
+                                    <div class="flex flex-col gap-4">
+                                        <div>
+                                            <input type="text" placeholder="Họ - Tên" id="name" name="name"
+                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full">
+                                        </div>
+                                        <div>
+                                            <input type="number" placeholder="Số điện thoại" id="phone" name="phone"
+                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full"
+                                                pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
+                                        </div>
+                                        <div>
+                                            <input type="email" placeholder="Nhập email tại đây" required="" id="email"
+                                                name="email"
+                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full">
+                                        </div>
+                                        <div class="relative options-dropdown">
+                                            <input type="text" placeholder="Gói dịch vụ" required="" id="service-pack"
+                                                name="service_pack"
+                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full disabled cursor-default"
+                                                readonly>
+                                            <div class="absolute top-1/2 right-3 -translate-y-1/2">
+                                                <i class="fa-solid fa-chevron-down text-[#66CDF1]"></i>
+                                            </div>
+                                            <div class="absolute options w-full border-[#CFECE8] border mt-1 hidden">
+                                                <div class="sm:h-[133px] h-[109px] overflow-y-scroll" id="options">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Ads Network"
+                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border-[#CFECE8]">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="SMS Marketing"
+                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border-[#CFECE8]">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Branding"
+                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border-[#CFECE8]">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Master Chanel"
+                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <textarea
+                                            class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] w-full resize-none"
+                                            id="note" name="note" rows="3" placeholder="Để lại lời nhắn"></textarea>
+                                        <button id="send-mail" type="button"
+                                            class="mt-3 w-full bg-[#3163AF] text-white flex justify-center items-center font-['Open Sans'] uppercase font-normal lg:tracking-[0.36em] tracking-[0.28em] lg:leading-[45px] leading-[36px] font-bold send-mail">
+                                            Gửi
+                                            <img src="./images/home/paper-plane-white.svg" />
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-[#EFEFEF]">
+            <hr class="border-[#66CDF1]">
+            <div
+                class="relative xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                <div class="flex md:flex-row flex-col lg:items-center items-start py-12 justify-center">
+                    <div class="md:w-2/5 w-full sm:block hidden">
+                        <a href="index.html" class="flex justify-center">
+                            <img src="./images/home/logo-black.svg" />
+                        </a>
+                    </div>
+                    <div
+                        class="flex md:flex-row flex-col md:w-3/5 w-full lg:mt-0 mt-4 text-[#180A3C] lg:ml-16 items-center justify-end">
+                        <div class="sm:w-4/5 w-full">
+                            <h3
+                                class="lg:text-left font-['Open Sans'] font-normal uppercase leading-[45px] md:text-2xl text-xl font-thin md:text-left text-center sm:text-nowrap">
+                                Công ty Cổ phần DatumSKy</h3>
+                            <div class="flex gap-x-2 mt-2 items-baseline">
+                                <img src="./images/home/address.svg" alt="address">
+                                <p>
+                                    Tầng 2, số 3/80 phố Hoàng Ngân, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội,
+                                    Việt
+                                    Nam
+                                    <br /> Mã số thuế: <b>0109937753</b>
+                                </p>
+                            </div>
+                            <div class="flex gap-x-2">
+                                <img src="./images/home/email.svg" alt="email">
+                                <p>business@datumsky.com</p>
+                            </div>
+                            <div class="flex gap-x-2">
+                                <img src="./images/home/phone.svg" alt="phone">
+                                <p><b>077.723.7708</b></p>
+                            </div>
+                        </div>
+                        <div
+                            class=" flex md:flex-col flex-row mt-8 text-[#180A3C] gap-3 lg:mr-12 mr-0 lg:ml-20 md:ml-8 justify-center">
+                            <a href="#">
+                                <img src="./images/home/zalo-url.svg" class="h-8 min-w-8" />
+                            </a>
+                            <a href="#">
+                                <img src="./images/home/facebook.svg" class="h-8 min-w-8" />
+                            </a>
+                            <a href="#">
+                                <img src="./images/home/twitter.svg" class="h-8 min-w-8" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            $("#header-content").load("header.html");
+        });
+
+        $('.options-dropdown').on("click", function () {
+            $(this).find(".options").toggleClass("hidden");
+            $(this).find("i").toggleClass("rotate-180");
+        });
+
+        $('.item').on("click", function () {
+            const itemEle$ = $(this);
+            const val = itemEle$.find("input").val();
+            $('#service-pack').val(val);
+            $('.item').each(function () {
+                if ($(this).find("input").val().includes(val)) {
+                    $(this).find("input").addClass("bg-[#66CDF1] !text-white")
+                } else {
+                    $(this).find("input").removeClass("bg-[#66CDF1] !text-white")
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            $(window).keydown(function (event) {
+                if (event.keyCode == 13) {
+                    event.preventDefault();
+                    return false;
+                }
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/sendmail.js"></script>
+    <script>
+        const params = new Map();
+        params.set("Service pack", "service-pack");
+        params.set("Full name", "name");
+        params.set("Phone number", "phone");
+        params.set("Note", "note");
+       
+        send(params, "email-template.html");
+    </script>
+</body>
+
+</html>

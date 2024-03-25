@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Performance Marketing</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/custom.css" />
+</head>
+
+<body class="text-white bg-[#190B3C]">
+    <div id="header-content"></div>
+
+    <div class="relative sm:top-[60px] top-[40px] md:pb-14 pb-10 w-full">
+        <section>
+            <div class="relative">
+                <img src="./images/performance-marketing/banner.svg" class="w-full" />
+                <div
+                    class="md:w-[25rem] w-[20rem] text-white absolute lg:top-[50%] lg:left-[12%] md:top-[50%] md:left-[6%] top-[50%] left-[6%] translate-x-0 -translate-y-1/2">
+                    <div
+                        class="uppercase lg:text-4xl md:text-2xl text-base font-black text-white prose prose-lg md:leading-8 leading-6">
+                        Nền tảng Affiliate
+                        <span class="hidden md:contents"><br></span>
+                        Marketing CPA – <span class="hidden md:contents"><br></span>Cost-per-action
+                    </div>
+                    <div
+                        class="text-white prose prose-lg lg:w-3/4 sm:w-2/3 w-full md:mt-10 mt-4 lg:text-lg md:text-base text-sm sm:block hidden">
+                        Hàng đầu Châu Á phục vụ nhu cầu quảng cáo chuyển đổi mở rộng cho khách hàng tại Việt Nam và quốc
+                        tế. Giúp hoàn thành KPI nhanh chóng, hiệu quả, tối ưu chi phí Marketing
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="relative flex justify-center items-center md:min-h-[unset] min-h-[auto] overflow-hidden">
+                <img src="./images/performance-marketing/banner1.svg"
+                    class="xl:w-full xl:max-w-full max-w-none xl:h-auto h-full" />
+                <div
+                    class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 lg:w-3/5 md:w-4/5 w-full md:px-0 px-8">
+                    <div class="w-full grid md:grid-cols-2 grid-cols-1 md:gap-x-[15%] gap-x-2 gap-y-10">
+                        <div>
+                            <div
+                                class=" text-center text-[#66CDF1] lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black text-nowrap">
+                                10 +</div>
+                            <div
+                                class=" text-center uppercase lg:text-2xl md:text-lg sm:text-base font-black text-nowrap">
+                                Year</div>
+                            <div class=" text-center md:mt-6 mt-2">Chúng tôi là lựa chọn hàng đầu về chất lượng và sản
+                                lượng CPA
+                                tại
+                                Việt Nam nhờ nền tảng công nghệ vượt trội và kinh nghiệm 10+ năm trong lĩnh vực
+                                Affiliate
+                                marketing</div>
+                        </div>
+                        <div>
+                            <div
+                                class=" text-center text-[#66CDF1] lg:text-6xl md:text-4xl sm:text-2xl text-xl font-black text-nowrap">
+                                10.000 +</div>
+                            <div
+                                class=" text-center uppercase lg:text-2xl md:text-lg sm:text-base font-black text-nowrap">
+                                khách hàng</div>
+                            <div class=" text-center md:mt-6 mt-2">Bằng công nghệ vượt trội, và kinh nghiệm 10+ năm
+                                trong ngành,
+                                Chúng tôi là đối tác đáng tin cậy của hơn 10,000+ khách hàng đa lĩnh vực.</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="relative">
+                <img src="./images/performance-marketing/affilicate-marketing.svg" class="w-full" />
+            </div>
+        </section>
+    </div>
+
+    <div id="footer-content"></div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/sendmail.js"></script>
+    <script>
+        $(function () {
+            $("#header-content").load("header.html");
+            $("#footer-content").load("footer.html");
+        });      
+    </script>
+
+</body>
+
+</html>

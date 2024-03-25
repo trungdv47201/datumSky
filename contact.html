@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/custom.css" />
+</head>
+
+<body class="text-white">
+    <div id="header-content"></div>
+
+    <section>
+        <div class="relative sm:top-[60px] top-[40px] left-0 sm:pb-[60px] pb-[80px]">
+            <div class="sm:py-16 py-8">
+                <div
+                    class="relative xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                    <div class="flex sm:flex-row flex-col text-[#676767] gap-y-8">
+                        <div
+                            class="sm:w-3/5 w-full flex gap-x-10 lg:text-lg md:text-[18px] text-sm order-last sm:-order-1">
+                            <div class="w-full">
+                                <div class="text-[#66CDF1] lg:text-3xl md:text-2xl sm:text-2xl text-xl font-black">
+                                    <h3>Gửi tin nhắn</h3>
+                                </div>
+                                <div>
+                                    <p>Nếu bạn cần tư vấn vui lòng để lại lời nhắn cho chúng tôi</p>
+                                </div>
+                                <div class="mt-5 grid grid-cols-2 gap-x-8 gap-y-4">
+                                    <div>
+                                        <input type="text" id="name" placeholder="Họ - Tên"
+                                            class="focus:outline-none border-b-2 border-[#B7B7B7] w-full py-1 ">
+                                    </div>
+                                    <div>
+                                        <input type="number" id="phone" placeholder="Số điện thoại"
+                                            class="focus:outline-none border-b-2 border-[#B7B7B7] w-full py-1 ">
+                                    </div>
+                                    <div>
+                                        <input type="text" id="address" placeholder="Địa chỉ"
+                                            class="focus:outline-none border-b-2 border-[#B7B7B7] w-full py-1 ">
+                                    </div>
+                                    <div>
+                                        <input type="email" id="email" placeholder="Email"
+                                            class="focus:outline-none border-b-2 border-[#B7B7B7] w-full py-1 ">
+                                    </div>
+                                    <div class="col-span-2">
+                                        <textarea rows="4" placeholder="Lời nhắn" id="note"
+                                            class="focus:outline-none border-b-2 border-[#B7B7B7] w-full py-1  resize-none"></textarea>
+                                    </div>
+                                    <div class="col-start-2">
+                                        <button id="send-mail" type="button"
+                                            class="float-right mt-3 bg-[#3163AF] text-white flex justify-center items-center font-['Open Sans'] uppercase font-normal lg:tracking-[0.36em] tracking-[0.28em] lg:leading-[45px] leading-[36px] font-black px-[20px] send-mail">
+                                            Gửi
+                                            <img src="./images/home/paper-plane-white.svg" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[1px] bg-[#B7B7B7] h-full sm:flex hidden"></div>
+                        </div>
+                        <div class="sm:w-2/5 w-full sm:pl-8 flex flex-row gap-8 md:text-lg md:!text-[16px] text-sm">
+                            <div class="flex flex-col gap-y-8 w-full">
+                                <div class="sm:flex flex-col gap-y-8 hidden">
+                                    <div class="text-[#66CDF1] lg:text-3xl md:text-2xl sm:text-2xl text-xl font-black">
+                                        <h3>Công ty cổ phần DatumSky</h3>
+                                    </div>
+                                    <div>
+                                        <p>Tầng 2, số 3/80 phố Hoàng Ngân, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà
+                                            Nội, Việt Nam</p>
+                                    </div>
+                                    <div>
+                                        <div class="flex gap-x-2">
+                                            <img src="./images/home/email.svg" alt="email">
+                                            <p>business@datumsky.com</p>
+                                        </div>
+                                        <div
+                                            class="flex gap-x-2 text-[#66CDF1] md:text-[26px] sm:text-[20px] text-[18px] font-black">
+                                            <img src="./images/home/phone.svg" alt="phone">
+                                            <p><b>077.723.7708</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <iframe class="w-full"
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7838.684254869503!2d106.70676642475235!3d10.785086936675276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1547181657956"
+                                        height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <div class="text-[#66CDF1] italic float-right mt-3 block sm:hidden">
+                                        Nhận chỉ đường
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-[#66CDF1] italic float-right mt-3 sm:block hidden">
+                        Nhận chỉ đường
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="bg-[#EFEFEF]">
+            <hr class="border-[#66CDF1]">
+            <div
+                class="relative xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                <div class="flex md:flex-row flex-col lg:items-center items-start py-12 justify-center">
+                    <div class="md:w-2/5 w-full sm:block hidden">
+                        <a href="index.html" class="flex justify-center">
+                            <img src="./images/home/logo-black.svg" />
+                        </a>
+                    </div>
+                    <div
+                        class="flex md:flex-row flex-col md:w-3/5 w-full lg:mt-0 mt-4 text-[#180A3C] lg:ml-16 items-center justify-end">
+                        <div class="sm:w-4/5 w-full">
+                            <h3
+                                class="lg:text-left font-['Open Sans'] font-normal uppercase leading-[45px] md:text-2xl text-xl font-thin md:text-left text-center sm:text-nowrap">
+                                Công ty Cổ phần DatumSKy</h3>
+                            <div class="flex gap-x-2 mt-2 items-baseline">
+                                <img src="./images/home/address.svg" alt="address">
+                                <p>
+                                    Tầng 2, số 3/80 phố Hoàng Ngân, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội,
+                                    Việt
+                                    Nam
+                                    <br /> Mã số thuế: <b>0109937753</b>
+                                </p>
+                            </div>
+                            <div class="flex gap-x-2">
+                                <img src="./images/home/email.svg" alt="email">
+                                <p>business@datumsky.com</p>
+                            </div>
+                            <div class="flex gap-x-2">
+                                <img src="./images/home/phone.svg" alt="phone">
+                                <p><b>077.723.7708</b></p>
+                            </div>
+                        </div>
+                        <div
+                            class=" flex md:flex-col flex-row mt-8 text-[#180A3C] gap-3 lg:mr-12 mr-0 lg:ml-20 md:ml-8 justify-center">
+                            <a href="#">
+                                <img src="./images/home/zalo-url.svg" class="h-8 min-w-8" />
+                            </a>
+                            <a href="#">
+                                <img src="./images/home/facebook.svg" class="h-8 min-w-8" />
+                            </a>
+                            <a href="#">
+                                <img src="./images/home/twitter.svg" class="h-8 min-w-8" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $(function () {
+            $("#header-content").load("header.html");
+        });
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/sendmail.js"></script>
+    <script>
+        const params = new Map();
+        params.set("Address", "address");
+        params.set("Full name", "name");
+        params.set("Phone number", "phone");
+        params.set("Note", "note");
+       
+        send(params, "email-template.html");
+    </script>
+</body>
+
+</html>
