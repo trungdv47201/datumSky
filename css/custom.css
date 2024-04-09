@@ -1,6 +1,84 @@
 @font-face {
   font-family: utm-aurora;
-  src: url('../font/UTM_Aurora.ttf');
+  src: url("../font/UTM_Aurora.ttf");
+}
+@font-face {
+  font-family: opensans-bold;
+  src: url("../font/OpenSans-Bold.ttf");
+}
+@font-face {
+  font-family: opensans-bold-italic;
+  src: url("../font/OpenSans-BoldItalic.ttf");
+}
+@font-face {
+  font-family: opensans-extra-bold-italic;
+  src: url("../font/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: opensans-italic;
+  src: url("../font/OpenSans-ExtraBoldItalic.ttf");
+}
+@font-face {
+  font-family: opensans-extra-bold;
+  src: url("../font/OpenSans-ExtraBold.ttf");
+}
+@font-face {
+  font-family: opensans-light;
+  src: url("../font/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: opensans-light-italic;
+  src: url("../font/OpenSans-LightItalic.ttf");
+}
+@font-face {
+  font-family: opensans-regular;
+  src: url("../font/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: opensans-semi-bold;
+  src: url("../font/OpenSans-Semibold.ttf");
+}
+@font-face {
+  font-family: opensans-semi-bold-italic;
+  src: url("../font/OpenSans-SemiboldItalic.ttf");
+}
+
+body {
+  font-family: opensans-light;
+}
+
+.utm-aurora {
+  font-family: utm-aurora;
+}
+.opensans-light {
+  font-family: opensans-light;
+}
+.opensans-regular {
+  font-family: opensans-regular;
+}
+.opensans-bold {
+  font-family: opensans-bold;
+}
+.opensans-bold-italic {
+  font-family: opensans-bold-italic;
+}
+.opensans-extra-bold-italic {
+  font-family: opensans-extra-bold-italic;
+}
+.opensans-italic {
+  font-family: opensans-italic;
+}
+.opensans-extra-bold {
+  font-family: opensans-extra-bold;
+}
+.opensans-light-italic {
+  font-family: opensans-light-italic;
+}
+.opensans-semi-bold {
+  font-family: opensans-semi-bold;
+}
+.opensans-semi-bold-italic {
+  font-family: opensans-semi-bold-italic;
 }
 
 /* menu header */
@@ -209,8 +287,7 @@ input[type="number"] {
 }
 
 .active {
-  background-color: #3163af !important;
-  color: white !important;
+  background-color: #7C67D1 !important;
 }
 
 .block-ellipsis-2 {
@@ -225,12 +302,41 @@ input[type="number"] {
 }
 
 .block-ellipsis-3 {
-    display: -webkit-box;
-    max-width: 100%;
-    margin: 0 auto;
-    line-height: 1;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  line-height: 1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bg-button {
+  background: linear-gradient(270deg, #3163af 0%, #7c67d1 51.5%, #66cdf1 100%);
+}
+
+.text-liner-gradient {
+  background: linear-gradient(90deg, #4499d4 0%, #9565db 100%);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.bg-card {
+  background: linear-gradient(180deg, #38d8f0 0%, rgba(106, 119, 221, 0) 100%);
+}
+.bg-card-1 {
+  background: linear-gradient(180deg, #7c67d1 0%, rgba(106, 119, 221, 0) 100%);
+}
+
+.bg-btn {
+  background: linear-gradient(90deg, #30e4f9 0%, #4799e5 51.5%, #b152d7 100%);
+}
+
+.shadow-inner-custom {
+  box-shadow: 0px 4px 4px 0px #bcdeea inset;
+}
+.shadow-drop-custom {
+  box-shadow: 0px 4px 4px 0px #3163af59;
+}
