@@ -1,5 +1,6 @@
-body {
-  font-family: "utm-aurora";
+@font-face {
+  font-family: utm-aurora;
+  src: url('../font/UTM_Aurora.ttf');
 }
 
 /* menu header */

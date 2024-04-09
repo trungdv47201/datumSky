@@ -3,361 +3,651 @@
 
 <head>
     <title>Home</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="./css/custom.css"/>
+    <link rel="stylesheet" href="./css/custom.css" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'>
     <link rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="css/video-marketing.css">
 </head>
 
 <body class="text-white bg-[#190B3C]">
-<div id="header-content"></div>
+    <div id="header-content"></div>
 
-<section>
-    <div class="relative sm:top-[60px] top-[40px] left-0 sm:pb-[60px] pb-[40px]">
-        <div
-                class="text-white absolute lg:top-[64%] md:top-1/2 sm:top-[42%] top-[75%] lg:left-0 sm:-left-[1%] left-[50%] -translate-x-1/2 sm:-translate-x-0 -translate-y-1/2 w-full">
+    <section>
+        <div class="relative sm:top-[60px] top-[40px] left-0 sm:pb-[60px] pb-[40px]">
             <div
+                class="text-white absolute top-[75%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-full">
+                <div
                     class="relative xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div class="flex justify-end items-end">
-                    <div class="sm:w-1/2 w-full">
-                        <div
-                                class="uppercase lg:text-4xl lg:text-[2.2rem] md:text-3xl md:text-[1.7rem] sm:text-2xl text-xl font-black text-[#66CDF1] prose prose-lg sm:text-nowrap sm:tracking-[-0.15rem] tracking-[-0.1rem]">
-                            Master&ensp;Digital&ensp;<span
-                                class="sm:hidden block"></span>Marketing<br/>Cooperation&ensp;in&ensp;Vietnam
-                        </div>
-                        <div class="lg:mt-16 md:mt-10 sm:mt-8 mt-4">
-                            <button
+                    <div class="flex justify-end items-end">
+                        <div class="sm:w-1/2 w-full">
+                            <div
+                                class="font-['utm-aurora'] uppercase lg:text-4xl lg:text-[2.2rem] md:text-3xl md:text-[1.7rem] sm:text-2xl text-xl font-black text-[white] prose prose-lg sm:text-nowrap ">
+                                Master Digital Marketing<br />Cooperation in Vietnam
+                            </div>
+                            <div class="lg:mt-16 md:mt-10 sm:mt-8 mt-4">
+                                <button
                                     class="bg-gradient-to-b from-[#66CDF1] to-[#3163AF] rounded-full flex justify-between items-center lg:text-xl lg:px-6 lg:py-2 md:text-base md:px-4 md:py-2 text-sm px-3 py-1">
-                                <a href="#learn-about">Tìm hiểu ngay</a>
-                                <i class="fa-solid fa-arrow-right ml-2"></i>
-                            </button>
+                                    <a href="#learn-about">Tìm hiểu ngay</a>
+                                    <i class="fa-solid fa-arrow-right ml-2"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sm:min-h-[100vh] min-h-[90vh] overflow-hidden">
+                <div class="sm:h-[100vh] h-[90vh] w-[100vw]">
+                    <img src="./images/home/banner.svg" class="object-cover h-full object-[36%_50%] sm:object-[32%_50%] md:object-[40%_50%] lg:object-[unset]" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="learn-about">
+        <div class="bg-[#3163AF]">
+            <div class="relative justify-center md:items-center items-end overflow-hidden">
+                <hr
+                    class="lg:w-24 sm:w-16 w-8 rotate-90 absolute left-1/2 border-t-[1px] lg:top-14 sm:top-10 top-6 -translate-x-1/2 border-[#66CDF1]">
+                <div
+                    class="text-white relative top-0 left-0 w-full lg:py-28 sm:py-20 py-10 bg-[url('./images/home/home1.svg')] bg-cover bg-no-repeat bg-center">
+                    <h3
+                        class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto text-white text-center">
+                        Nền tảng tiếp thị <br /> kỹ thuật số hàng đầu Việt Nam
+                    </h3>
+                    <div class="md:mt-10 sm:mt-6 mt-2">
+                        <div
+                            class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                            <div id="splide-ads"
+                                class="splide xl:px-[85px] lg:px-[55px] md:px-[45px] sm:px-[35px] px-[30px]">
+                                <div class="splide__track">
+                                    <ul class="splide__list">
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            Branding
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Là đối tác tin cậy về các giải pháp thương hiệu, tư vấn
+                                                            chiến lược thực chiến cho các doanh nghiệp trong và
+                                                            ngoài nước, từ xây dựng các chiến dịch, thiết kế thương
+                                                            hiệu, logo, profile, catalogue, website… đến những chiến
+                                                            dịch truyền thông, marketing tổng thể. Đưa vị trí thương
+                                                            hiệu vào tâm trí khách hàng.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="sms-brandname.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            Master Channel
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Một dịch vụ tối ưu hóa chiến lược tiếp thị
+                                                            toàn diện, giúp tổng hợp và quản lý hiệu quả các chiến lược
+                                                            từ nhiều kênh khác nhau. Tự động hóa quy trình triển khai,
+                                                            trực quan hóa dữ liệu, tích hợp linh hoạt và hỗ trợ quyết
+                                                            định dựa trên dữ liệu chính xác.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="sms-brandname.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            Performance
+                                                            Marketing
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Giúp các doanh nghiệp không chỉ tập trung
+                                                            vào việc thu hút khách hàng mà còn đặt trọng tâm vào việc
+                                                            tối ưu
+                                                            hóa hiệu suất và đạt được kết quả đáng kinh ngạc. Với chiến
+                                                            lược
+                                                            đa chiều và phân tích sâu, đem lại sự thành công bền vững
+                                                            cho
+                                                            doanh nghiệp.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="performance-marketing.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            Push Notification
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Làm thế nào để có thể kết nối mạnh mẽ hơn với khách hàng của
+                                                            mình? Push Notification của chúng tôi sẽ giúp bạn làm điều
+                                                            đó
+                                                            bằng chiến dịch đẩy thông báo trực tiếp đến di động của
+                                                            khách
+                                                            hàng, sẽ giúp doanh nghiệp của bạn giữ được vị trí trong tâm
+                                                            trí
+                                                            khách hàng.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="push-notification.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            Video ads
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Với video quảng cáo chất lượng cao và chiến lược định hình
+                                                            thương hiệu, chính là xu hướng để tạo nên sự khác biệt và
+                                                            thu
+                                                            hút sự chú ý của khách hàng tới doanh nghiệp của bạn.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="video-marketing.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            FACEBOOK ADS
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Để sử hữu một chiến lược tiếp thị chuyên sâu và khả năng tối
+                                                            ưu
+                                                            hiệu quả, Facebook Ads chính là chìa khóa tiếp cận đúng đối
+                                                            tượng khách hàng mục tiêu và tăng doanh số bán hàng.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="facebook-ads.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            Tiktok ads
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Tiktok đang là một nền tảng tiềm năng khám phá cơ hội tiếp
+                                                            cận
+                                                            hàng triệu người dùng trên toàn cầu. Khả năng sáng tạo nội
+                                                            dung
+                                                            và tiếp cận đối tượng mục tiêu, Tiktok Ads đem lại kết quả
+                                                            tăng
+                                                            trưởng vượt bậc cho chiến dịch quảng cáo của các doanh
+                                                            nghiệp.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="tiktok-ads.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            GOOGLE ADS
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            Bắt kịp nhịp chạy trong cuộc đua trên Internet, dịch vụ
+                                                            Google
+                                                            Ads với khả năng tiếp cận hàng triệu người dùng chất lượng
+                                                            mỗi
+                                                            ngày, tối ưu hóa quảng cáo để mang lại hiệu quả tối đa.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="google-ads.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="splide__slide pt-[50px]">
+                                            <div class="flex h-full relative w-full sm item-slider">
+                                                <div
+                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
+                                                    <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
+                                                        <div
+                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
+                                                            <img src="./images/home/bot.png" alt="bot"
+                                                                class="h-full overflow-hidden">
+                                                        </div>
+                                                        <h5
+                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
+                                                            SMS Brandname
+                                                        </h5>
+                                                        <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
+                                                            SMS Brandname đã trở thành công cụ tiếp thị hiệu quả với các
+                                                            chiến dịch SMS hiệu quả, giúp kết nối với khách hàng một
+                                                            cách cá
+                                                            nhân và mang lại kết quả ấn tượng.
+                                                        </p>
+                                                    </div>
+                                                    <div class="text-center flex justify-center">
+                                                        <div class="learn-about cursor-pointer">
+                                                            <a href="sms-brandname.html"
+                                                                class="inline-flex items-center hover:underline">
+                                                                Tìm hiểu
+                                                            </a>
+                                                            <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="./images/home/banner-mobile.svg" class="w-full sm:hidden block" alt=""/>
-        <img src="./images/home/banner.png" class="w-full sm:block hidden" alt=""/>
-    </div>
-</section>
+    </section>
 
-<section id="learn-about">
-    <div class="bg-[#3163AF]">
-        <div
-                class="relative justify-center md:items-center items-end overflow-hidden">
-            <hr
-                    class="lg:w-24 sm:w-16 w-8 rotate-90 absolute left-1/2 border-t-[1px] lg:top-14 sm:top-10 top-6 -translate-x-1/2 border-[#66CDF1]">
-            <div class="text-white relative top-0 left-0 w-full lg:py-28 sm:py-20 py-10 bg-[url('./images/home/home1.svg')] bg-cover bg-no-repeat bg-center">
+    <section>
+        <div class="bg-[#F5F6F6] text-center sm:py-14 py-8 sm:pb-24 md:pb-32 lg:pb-14 pb-40 relative">
+            <div>
                 <h3
-                        class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto text-white text-center">
-                    Nền tảng tiếp thị <br/> kỹ thuật số hàng đầu Việt Nam
-                </h3>
-                <div class="md:mt-10 sm:mt-6 mt-2">
+                    class="text-[#3163AF] font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl text-xl font-[300]">
+                    datumsky</h3>
+                <h3
+                    class="text-[#4499D4] lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto text-center">
+                    Đa kênh - Toàn diện</h3>
+            </div>
+            <div
+                class="flex flex-wrap justify-between items-center xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                <div class="lg:w-1/2 md:w-2/3 pt-20 relative left-[38%] -translate-x-[38%]">
+                    <img src="./images/home/ads.png" alt="" />
+                </div>
+                <p
+                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute sm:top-[10.5rem] top-[24%] md:left-56 left-[50%] md:-translate-x-0 -translate-x-[50%]">
+                    SMS
+                </p>
+                <p
+                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute sm:top-[15rem] top-[36%] md:left-56 left-[50%] md:-translate-x-0 -translate-x-[50%]">
+                    Tiktok
+                </p>
+                <p
+                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute sm:top-[19.5rem] top-[48%] md:left-56 left-[50%] md:-translate-x-0 -translate-x-[50%]">
+                    Viber
+                </p>
+                <p
+                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute lg:top-[20.5rem] sm:top-[24rem] top-[60%] md:right-56 md:left-auto left-[50%] md:-translate-x-0 -translate-x-[50%]">
+                    Zalo</p>
+                <p
+                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute lg:top-[25rem] sm:top-[28.5rem] top-[72%] md:right-56 md:left-auto left-[50%] md:-translate-x-0 -translate-x-[50%]">
+                    Facebook</p>
+                <p
+                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute lg:top-[29.5rem] sm:top-[33rem] top-[84%] md:right-56 md:left-auto left-[50%] md:-translate-x-0 -translate-x-[50%]">
+                    Google</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-white text-center sm:py-12 py-8 relative">
+            <div class="w-full flex justify-center items-center">
+                <img src="./images/home/paper-plane.svg" alt="paper-plane" />
+            </div>
+            <h3
+                class="text-[#4499D4] lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto text-center">
+                Thông minh, tự động</h3>
+
+            <div
+                class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                <div id="splide-phone" class="splide xl:px-[110px] lg:px-[80px] md:px-[45px] sm:px-[35px] px-[30px]">
+                    <div class="splide__track">
+                        <ul class="splide__list !text-[#3163AF]">
+                            <li
+                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
+                                <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
+                                    <img src="./images/home/slider/slider1.png" alt=""
+                                        class="w-full sm:rounded-[36px] rounded-[20px]">
+                                </div>
+                            </li>
+                            <li
+                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
+                                <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
+                                    <img src="./images/home/slider/slider1.png" alt=""
+                                        class="w-full sm:rounded-[36px] rounded-[20px]">
+                                </div>
+                            </li>
+                            <li
+                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
+                                <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
+                                    <img src="./images/home/slider/slider1.png" alt=""
+                                        class="w-full sm:rounded-[36px] rounded-[20px]">
+                                </div>
+                            </li>
+                            <li
+                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
+                                <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
+                                    <img src="./images/home/slider/slider1.png" alt=""
+                                        class="w-full sm:rounded-[36px] rounded-[20px]">
+                                </div>
+                            </li>
+                            <li
+                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
+                                <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
+                                    <img src="./images/home/slider/slider1.png" alt=""
+                                        class="w-full sm:rounded-[36px] rounded-[20px]">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="bg-[#F5F6F6] text-center md:py-24 sm:py-16 py-10 flex flex-col justify-center items-center">
+            <div class="relative">
+                <h3
+                    class="text-[#3163AF] font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl sm:text-2xl text-xl font-[300]">
+                    datumsky</h3>
+                <h3 class="text-[#4499D4] md:text-4xl sm:text-2xl text-xl font-bold mt-1 prose prose-lg">Giải pháp cho
+                    từng ngành
+                    hàng</h3>
+                <div>
                     <div
-                            class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                        <div id="splide-ads"
-                             class="splide xl:px-[85px] lg:px-[55px] md:px-[45px] sm:px-[35px] px-[30px]">
+                        class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                        <div id="splide-solution"
+                            class="splide xl:px-[85px] lg:px-[55px] md:px-[45px] sm:px-[35px] px-[30px] pb-[40px]">
                             <div class="splide__track">
-                                <ul class="splide__list">
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
+                                <ul class="splide__list gap-[20px] w-[calc(100%+20px)]">
+                                    <li class="splide__slide lg:w-[calc(50%-20px)] w-[calc(100%-20px)]">
+                                        <div
+                                            class="grid sm:gap-x-5 gap-x-4 grid-cols-1 item-solution item-slider w-full min-w-full">
+                                            <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/finance.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
                                                     </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        Branding
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Là đối tác tin cậy về các giải pháp thương hiệu, tư vấn
-                                                        chiến lược thực chiến cho các doanh nghiệp trong và
-                                                        ngoài nước, từ xây dựng các chiến dịch, thiết kế thương
-                                                        hiệu, logo, profile, catalogue, website… đến những chiến
-                                                        dịch truyền thông, marketing tổng thể. Đưa vị trí thương
-                                                        hiệu vào tâm trí khách hàng.
-                                                    </p>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            Tài chính
+                                                        </h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Bán thêm và bán chéo, thúc đẩy lượt tải App và mở tài khoản
+                                                        </p>
+                                                    </div>
                                                 </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="sms-brandname.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/realty.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
+                                                    </div>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            BẤT ĐỘNG SẢN
+                                                        </h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            "Làm sạch" dữ liệu thô, nhắm chính xác mục tiêu theo bộ tiêu
+                                                            chí</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/doctor.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
+                                                    </div>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            SỨC
+                                                            KHỎE / THẨM MỸ
+                                                        </h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Tối ưu chi phí telesale và đưa khách hàng tiềm năng tới cửa
+                                                            hàng</p>
+                                                    </div>
+                                                </div>
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/plane.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
+                                                    </div>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            DU
+                                                            LỊCH /
+                                                            NGHỈ
+                                                            DƯỠNG</h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Gửi thông tin đặt tour, book phòng theo
+                                                            "dấu chân" khách hàng</p>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
+                                    <li class="splide__slide lg:w-[calc(50%-20px)] w-[calc(100%-20px)]">
+                                        <div
+                                            class="grid sm:gap-x-5 gap-x-4 grid-cols-1 item-solution item-slider w-full min-w-full">
+                                            <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/cart.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
                                                     </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        Master Channel
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Một dịch vụ tối ưu hóa chiến lược tiếp thị
-                                                        toàn diện, giúp tổng hợp và quản lý hiệu quả các chiến lược
-                                                        từ nhiều kênh khác nhau. Tự động hóa quy trình triển khai,
-                                                        trực quan hóa dữ liệu, tích hợp linh hoạt và hỗ trợ quyết
-                                                        định dựa trên dữ liệu chính xác.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="sms-brandname.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            bán lẻ</h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Thu hút khách hàng đến cửa hàng từ online đến offline</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/books.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
                                                     </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        Performance
-                                                        Marketing
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Giúp các doanh nghiệp không chỉ tập trung
-                                                        vào việc thu hút khách hàng mà còn đặt trọng tâm vào việc tối ưu
-                                                        hóa hiệu suất và đạt được kết quả đáng kinh ngạc. Với chiến lược
-                                                        đa chiều và phân tích sâu, đem lại sự thành công bền vững cho
-                                                        doanh nghiệp.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="performance-marketing.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            GIÁO DỤC
+                                                        </h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Chăm sóc và upsale
+                                                            học viên xuyên suốt
+                                                            theo từng cấp học</p>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
+                                            <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/entertainment.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
                                                     </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        Push Notification
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Làm thế nào để có thể kết nối mạnh mẽ hơn với khách hàng của
-                                                        mình? Push Notification của chúng tôi sẽ giúp bạn làm điều đó
-                                                        bằng chiến dịch đẩy thông báo trực tiếp đến di động của khách
-                                                        hàng, sẽ giúp doanh nghiệp của bạn giữ được vị trí trong tâm trí
-                                                        khách hàng.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="push-notification.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            F&B / GIẢI
+                                                            TRÍ
+                                                        </h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Thu thập thông tin khách vãng lai, tương tác bằng vô vàn trò
+                                                            chơi thú vị</p>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
+                                                <div class="md:pt-12 flex flex-col">
+                                                    <div class="flex justify-center items-center h-[200px]">
+                                                        <img src="./images/home/tax.svg" alt="bot"
+                                                            class="h-full overflow-hidden">
                                                     </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        Video ads
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Với video quảng cáo chất lượng cao và chiến lược định hình
-                                                        thương hiệu, chính là xu hướng để tạo nên sự khác biệt và thu
-                                                        hút sự chú ý của khách hàng tới doanh nghiệp của bạn.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="video-marketing.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
-                                                    </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        FACEBOOK ADS
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Để sử hữu một chiến lược tiếp thị chuyên sâu và khả năng tối ưu
-                                                        hiệu quả, Facebook Ads chính là chìa khóa tiếp cận đúng đối
-                                                        tượng khách hàng mục tiêu và tăng doanh số bán hàng.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="facebook-ads.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
-                                                    </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        Tiktok ads
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Tiktok đang là một nền tảng tiềm năng khám phá cơ hội tiếp cận
-                                                        hàng triệu người dùng trên toàn cầu. Khả năng sáng tạo nội dung
-                                                        và tiếp cận đối tượng mục tiêu, Tiktok Ads đem lại kết quả tăng
-                                                        trưởng vượt bậc cho chiến dịch quảng cáo của các doanh nghiệp.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="tiktok-ads.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
-                                                    </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        GOOGLE ADS
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        Bắt kịp nhịp chạy trong cuộc đua trên Internet, dịch vụ Google
-                                                        Ads với khả năng tiếp cận hàng triệu người dùng chất lượng mỗi
-                                                        ngày, tối ưu hóa quảng cáo để mang lại hiệu quả tối đa.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="google-ads.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="splide__slide pt-[50px]">
-                                        <div class="flex h-full relative w-full sm item-slider">
-                                            <div
-                                                    class="bg-gradient-to-b from-[#D9D9D947] to-[#D9D9D900] flex flex-col justify-between pb-3 text-center">
-                                                <div class="relative sm:py-14 py-10 px-4 md:pb-10 pb-8 z-10">
-                                                    <div
-                                                            class="absolute -top-11 left-1/2 -translate-x-1/2 rounded-full border-2 sm:w-20 sm:h-20 w-16 h-16 flex justify-center items-center z-100">
-                                                        <img src="./images/home/bot.png" alt="bot"
-                                                             class="h-full overflow-hidden">
-                                                    </div>
-                                                    <h5
-                                                            class="mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase">
-                                                        SMS Brandname
-                                                    </h5>
-                                                    <p class="sm:mb-3 sm:mt-8 font-normal sm:text-base text-sm">
-                                                        SMS Brandname đã trở thành công cụ tiếp thị hiệu quả với các
-                                                        chiến dịch SMS hiệu quả, giúp kết nối với khách hàng một cách cá
-                                                        nhân và mang lại kết quả ấn tượng.
-                                                    </p>
-                                                </div>
-                                                <div class="text-center flex justify-center">
-                                                    <div class="learn-about cursor-pointer">
-                                                        <a href="sms-brandname.html"
-                                                           class="inline-flex items-center hover:underline">
-                                                            Tìm hiểu
-                                                        </a>
-                                                        <i class="fa-solid fa-arrow-right ml-2"></i>
+                                                    <div>
+                                                        <h5
+                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
+                                                            HÀNH CHÍNH
+                                                            CÔNG
+                                                        </h5>
+                                                        <p
+                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
+                                                            Xây dựng uy tín
+                                                            thương hiệu và nâng cao
+                                                            nhận thức khách hàng</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -370,270 +660,352 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <div class="bg-[#F5F6F6] text-center sm:py-14 py-8 sm:pb-24 md:pb-32 lg:pb-14 pb-40 relative">
-        <div>
-            <h3
-                    class="text-[#3163AF] font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl text-xl font-[300]">
-                datumsky</h3>
-            <h3
-                    class="text-[#4499D4] lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto text-center">
-                Đa kênh - Toàn diện</h3>
-        </div>
+    <section>
         <div
-                class="flex flex-wrap justify-between items-center xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-            <div class="lg:w-1/2 md:w-2/3 pt-20 relative left-[38%] -translate-x-[38%]">
-                <img src="./images/home/ads.png" alt=""/>
+            class="lg:grid lg:grid-cols-2 grid-cols-1 flex flex-col lg:justify-left justify-center lg:items-start items-center mx-auto lg:max-w-screen-lg lg:w-auto w-4/5 md:pt-28 sm:pt-20 pt-10 lg:pb-32 md:pb-20 sm:pb-16 pb-10 gap-x-16">
+            <div class="lg:hidden">
+                <h3
+                    class="lg:text-left text-center text-white font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl sm:text-2xl text-xl font-thin">
+                    // datumsky //</h3>
+                <h3 class="text-[#66CDF1] md:text-4xl sm:text-2xl text-xl font-bold mt-1 prose prose-lg">Tận tâm trong
+                    từng
+                    dịch vụ
+                </h3>
             </div>
-            <p
-                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute sm:top-[10.5rem] top-[24%] md:left-56 left-[50%] md:-translate-x-0 -translate-x-[50%]">
-                SMS
-            </p>
-            <p
-                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute sm:top-[15rem] top-[36%] md:left-56 left-[50%] md:-translate-x-0 -translate-x-[50%]">
-                Tiktok
-            </p>
-            <p
-                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute sm:top-[19.5rem] top-[48%] md:left-56 left-[50%] md:-translate-x-0 -translate-x-[50%]">
-                Viber
-            </p>
-            <p
-                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute lg:top-[20.5rem] sm:top-[24rem] top-[60%] md:right-56 md:left-auto left-[50%] md:-translate-x-0 -translate-x-[50%]">
-                Zalo</p>
-            <p
-                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute lg:top-[25rem] sm:top-[28.5rem] top-[72%] md:right-56 md:left-auto left-[50%] md:-translate-x-0 -translate-x-[50%]">
-                Facebook</p>
-            <p
-                    class="box-arrow sm:text-[26px] sm:w-[270px] sm:h-[44px] w-[240px] h-[36px] absolute lg:top-[29.5rem] sm:top-[33rem] top-[84%] md:right-56 md:left-auto left-[50%] md:-translate-x-0 -translate-x-[50%]">
-                Google</p>
-        </div>
-    </div>
-</section>
-
-<section>
-    <div class="bg-white text-center sm:py-12 py-8 relative">
-        <div class="w-full flex justify-center items-center">
-            <img src="./images/home/paper-plane.svg" alt="paper-plane"/>
-        </div>
-        <h3
-                class="text-[#4499D4] lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold prose prose-lg mx-auto text-center">
-            Thông minh, tự động</h3>
-
-        <div
-                class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-            <div id="splide-phone" class="splide xl:px-[110px] lg:px-[80px] md:px-[45px] sm:px-[35px] px-[30px]">
-                <div class="splide__track">
-                    <ul class="splide__list !text-[#3163AF]">
-                        <li
-                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
-                            <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
-                                <img src="./images/home/slider/slider1.png" alt=""
-                                     class="w-full sm:rounded-[36px] rounded-[20px]">
-                            </div>
-                        </li>
-                        <li
-                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
-                            <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
-                                <img src="./images/home/slider/slider1.png" alt=""
-                                     class="w-full sm:rounded-[36px] rounded-[20px]">
-                            </div>
-                        </li>
-                        <li
-                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
-                            <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
-                                <img src="./images/home/slider/slider1.png" alt=""
-                                     class="w-full sm:rounded-[36px] rounded-[20px]">
-                            </div>
-                        </li>
-                        <li
-                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
-                            <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
-                                <img src="./images/home/slider/slider1.png" alt=""
-                                     class="w-full sm:rounded-[36px] rounded-[20px]">
-                            </div>
-                        </li>
-                        <li
-                                class="splide__slide sm:pb-[100px] md:pb-[120px] pb-[50px] md:pt-[180px] pt-[144px] sm:pt-[130px] ">
-                            <div class="img-phone-ads relative pt-[10%] sm:pb-[30px] pb-[50px]">
-                                <img src="./images/home/slider/slider1.png" alt=""
-                                     class="w-full sm:rounded-[36px] rounded-[20px]">
-                            </div>
-                        </li>
-                    </ul>
+            <div class="lg:pt-8 pt-10 relative" id="experience">
+                <div
+                    class="absolute bg-[#66CDF1] sm:w-[32%] sm:h-[29%] w-[120px] h-[120px] left-[54%] top-[10%] rounded-[30px] flex justify-center items-center flex-col">
+                    <p class="sm:text-[5rem] text-[3.5rem] font-black leading-[60px]">6+</p>
+                    <p class="sm:text-[1.25rem] text-sm leading-[16px] sm:leading-[24px] uppercase text-center sm:pt-3">
+                        Year experience</p>
+                </div>
+                <img src="./images/home/experience.svg" alt="" />
+            </div>
+            <div class="flex flex-col justify-between lg:items-start items-center py-12 lg:pt-12 pt-0">
+                <div class="lg:block hidden">
+                    <h3
+                        class="lg:text-left text-center text-white font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl sm:text-2xl text-xl font-thin">
+                        // datumsky //</h3>
+                    <h3 class="text-[#66CDF1] md:text-4xl text-2xl font-bold mt-1 prose prose-lg">Tận tâm trong từng
+                        dịch vụ
+                    </h3>
+                </div>
+                <div class="font-['Open Sans'] font-normal font-thin text-center sm:mt-12 mt-10 text-justify">
+                    Khách hàng là trọng tâm của mọi hoạt động của chúng tôi. Chúng tôi luôn lắng nghe và phản hồi
+                    nhanh chóng để giải quyết mọi vấn đề một cách hiệu quả nhất. Điều này giúp chúng tôi duy trì cam kết
+                    về chất lượng dịch vụ hàng đầu, không ngừng nỗ lực để mang đến cho khách hàng trải nghiệm tốt nhất.
+                </div>
+                <div class="grid sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-4 mt-10 w-full">
+                    <div class="flex items-center gap-x-5 text-base">
+                        <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
+                        <div class="w-full relative">
+                            <p>Tư vấn nhiệt tình</p>
+                            <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-x-5 text-base">
+                        <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
+                        <div class="w-full relative">
+                            <p>Phản hồi nhanh chóng</p>
+                            <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-x-5 text-base">
+                        <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
+                        <div class="w-full relative">
+                            <p>Chất lượng hàng đầu</p>
+                            <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-x-5 text-base">
+                        <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
+                        <div class="w-full relative">
+                            <p>Trải nghiệm tốt nhất</p>
+                            <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<section>
-    <div class="bg-[#F5F6F6] text-center md:py-24 sm:py-16 py-10 flex flex-col justify-center items-center">
-        <div class="relative">
-            <h3
-                    class="text-[#3163AF] font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl sm:text-2xl text-xl font-[300]">
-                datumsky</h3>
-            <h3 class="text-[#4499D4] md:text-4xl sm:text-2xl text-xl font-bold mt-1 prose prose-lg">Giải pháp cho
-                từng ngành
-                hàng</h3>
-            <div>
+        <div class="text-center md:pb-20 pb-10">
+            <div class="flex justify-center">
+                <h3 class="text-[#66CDF1] md:text-4xl text-2xl font-bold mt-1 prose prose-lg">Đối tác của chúng tôi</h3>
+            </div>
+            <div class="md:mt-12 sm:mt-4 mt-2">
                 <div
-                        class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                    <div id="splide-solution"
-                         class="splide xl:px-[85px] lg:px-[55px] md:px-[45px] sm:px-[35px] px-[30px] pb-[40px]">
+                    class="relative flex-wrap justify-between items-center xl:px-32 lg:px-20 md:px-12 px-4 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
+                    <div id="splide-partner" class="splide lg:px-[80px] sm:px-[60px] px-[30px]">
                         <div class="splide__track">
-                            <ul class="splide__list gap-[20px] w-[calc(100%+20px)]">
-                                <li class="splide__slide lg:w-[calc(50%-20px)] w-[calc(100%-20px)]">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
                                     <div
-                                            class="grid sm:gap-x-5 gap-x-4 grid-cols-1 item-solution item-slider w-full min-w-full">
-                                        <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/finance.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        Tài chính
-                                                    </h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Bán thêm và bán chéo, thúc đẩy lượt tải App và mở tài khoản
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/realty.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        BẤT ĐỘNG SẢN
-                                                    </h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        "Làm sạch" dữ liệu thô, nhắm chính xác mục tiêu theo bộ tiêu
-                                                        chí</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/doctor.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        SỨC
-                                                        KHỎE / THẨM MỸ
-                                                    </h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Tối ưu chi phí telesale và đưa khách hàng tiềm năng tới cửa
-                                                        hàng</p>
-                                                </div>
-                                            </div>
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/plane.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        DU
-                                                        LỊCH /
-                                                        NGHỈ
-                                                        DƯỠNG</h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Gửi thông tin đặt tour, book phòng theo
-                                                        "dấu chân" khách hàng</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/baoquocte.png" alt="baoquocte"
+                                            class="object-cover object-center w-full" />
                                     </div>
                                 </li>
-                                <li class="splide__slide lg:w-[calc(50%-20px)] w-[calc(100%-20px)]">
+                                <li class="splide__slide">
                                     <div
-                                            class="grid sm:gap-x-5 gap-x-4 grid-cols-1 item-solution item-slider w-full min-w-full">
-                                        <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/cart.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        bán lẻ</h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Thu hút khách hàng đến cửa hàng từ online đến offline</p>
-                                                </div>
-                                            </div>
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/books.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        GIÁO DỤC
-                                                    </h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Chăm sóc và upsale
-                                                        học viên xuyên suốt
-                                                        theo từng cấp học</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="grid grid-cols-2 sm:gap-x-5 gap-x-4">
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/entertainment.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        F&B / GIẢI
-                                                        TRÍ
-                                                    </h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Thu thập thông tin khách vãng lai, tương tác bằng vô vàn trò
-                                                        chơi thú vị</p>
-                                                </div>
-                                            </div>
-                                            <div class="md:pt-12 flex flex-col">
-                                                <div class="flex justify-center items-center h-[200px]">
-                                                    <img src="./images/home/tax.svg" alt="bot"
-                                                         class="h-full overflow-hidden">
-                                                </div>
-                                                <div>
-                                                    <h5
-                                                            class="sm:mb-2 md:text-xl sm:text-lg text-base font-semibold tracking-tight uppercase text-[#3163AF]">
-                                                        HÀNH CHÍNH
-                                                        CÔNG
-                                                    </h5>
-                                                    <p
-                                                            class="sm:mb-3 mt-5 font-normal text-black sm:text-base text-sm">
-                                                        Xây dựng uy tín
-                                                        thương hiệu và nâng cao
-                                                        nhận thức khách hàng</p>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/tienphong.png" alt="tienphong"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="https://static-cms-sggp.epicdn.me/v4/web/styles/img/sggp-logo.svg?v1.0.1"
+                                            alt="sggp" class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/dantri.svg" alt="dantri"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/batdongsan.jpg" alt="batdongsan"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vov.png" alt="vov"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/ngoisaovn.jpg" alt="ngoisaovn"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/phapluatplus.png" alt="phapluatplus"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/ttvh.jpg" alt="ttvh"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/trithucquocsong.png" alt="trithucquocsong"
+                                            class="object-cover object-tri w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/vietnambiz.png" alt="vietnambiz"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-[#616163] w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vietnammoi.png" alt="vietnammoi"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vneconomy.png" alt="vneconomy"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vtcnews.png" alt="vtcnews"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/baotintuc.jpg" alt="baotintuc"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/phunuvagiadinh.png" alt="phunuvagiadinh"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/bnews.jpg" alt="bnews"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/suckhoeviet.png" alt="suckhoeviet"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/docbao24h.jpeg" alt="docbao24h"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/mbbank.png" alt="mbbank"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vpbank.png" alt="vpbank"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vietcombank.png" alt="vietcombank"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vietinbank-insurance.png" alt="vietinbank"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/tnex.png" alt="tnex"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/vinhomes.webp" alt="vinhomes"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[16px]">
+                                        <img src="./images/partner/novaland.webp" alt="novaland"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/canifa.png" alt="canifa"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/goldilacgrow.png" alt="goldilacgrow"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
+                                        <img src="./images/partner/wakamono.jpeg" alt="wakamono"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/yody.png" alt="yody"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/be.jpg" alt="be"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
+                                        <img src="./images/partner/ahamove.png" alt="ahamove"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
+                                        <img src="./images/partner/lazada.png" alt="lazada"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
+                                        <img src="./images/partner/logo-shopee.png" alt="shopee"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/shb.png" alt="shb"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
+                                        <img src="./images/partner/Nam_A_Bank_Logo.jpg" alt="Nam_A_Bank"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
+                                        <img src="./images/partner/logo-shinhan-Bank.jpg" alt="shinhan-bank"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/Báo_Pháp_Luật_TP.HCM.jpg" alt="Báo_Pháp_Luật_TP.HCM"
+                                            class="object-cover object-center w-full" />
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div
+                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
+                                        <img src="./images/partner/Logo_TTXVN.png" alt="TTXVN"
+                                            class="object-cover object-center w-full" />
                                     </div>
                                 </li>
                             </ul>
@@ -642,396 +1014,40 @@
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section>
-    <div
-            class="lg:grid lg:grid-cols-2 grid-cols-1 flex flex-col lg:justify-left justify-center lg:items-start items-center mx-auto lg:max-w-screen-lg lg:w-auto w-4/5 md:pt-28 sm:pt-20 pt-10 lg:pb-32 md:pb-20 sm:pb-16 pb-10 gap-x-16">
-        <div class="lg:hidden">
-            <h3
-                    class="lg:text-left text-center text-white font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl sm:text-2xl text-xl font-thin">
-                // datumsky //</h3>
-            <h3 class="text-[#66CDF1] md:text-4xl sm:text-2xl text-xl font-bold mt-1 prose prose-lg">Tận tâm trong
-                từng
-                dịch vụ
-            </h3>
-        </div>
-        <div class="lg:pt-8 pt-10 relative" id="experience">
-            <div
-                    class="absolute bg-[#66CDF1] sm:w-[32%] sm:h-[29%] w-[120px] h-[120px] left-[54%] top-[10%] rounded-[30px] flex justify-center items-center flex-col">
-                <p class="sm:text-[5rem] text-[3.5rem] font-black leading-[60px]">6+</p>
-                <p class="sm:text-[1.25rem] text-sm leading-[16px] sm:leading-[24px] uppercase text-center sm:pt-3">
-                    Year experience</p>
-            </div>
-            <img src="./images/home/experience.svg" alt=""/>
-        </div>
-        <div class="flex flex-col justify-between lg:items-start items-center py-12 lg:pt-12 pt-0">
-            <div class="lg:block hidden">
-                <h3
-                        class="lg:text-left text-center text-white font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[45px] md:text-3xl sm:text-2xl text-xl font-thin">
-                    // datumsky //</h3>
-                <h3 class="text-[#66CDF1] md:text-4xl text-2xl font-bold mt-1 prose prose-lg">Tận tâm trong từng
-                    dịch vụ
-                </h3>
-            </div>
-            <div class="font-['Open Sans'] font-normal font-thin text-center sm:mt-12 mt-10 text-justify">
-                Khách hàng là trọng tâm của mọi hoạt động của chúng tôi. Chúng tôi luôn lắng nghe và phản hồi
-                nhanh chóng để giải quyết mọi vấn đề một cách hiệu quả nhất. Điều này giúp chúng tôi duy trì cam kết
-                về chất lượng dịch vụ hàng đầu, không ngừng nỗ lực để mang đến cho khách hàng trải nghiệm tốt nhất.
-            </div>
-            <div class="grid sm:grid-cols-2 grid-cols-1 gap-x-10 gap-y-4 mt-10 w-full">
-                <div class="flex items-center gap-x-5 text-base">
-                    <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
-                    <div class="w-full relative">
-                        <p>Tư vấn nhiệt tình</p>
-                        <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
-                    </div>
-                </div>
-                <div class="flex items-center gap-x-5 text-base">
-                    <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
-                    <div class="w-full relative">
-                        <p>Phản hồi nhanh chóng</p>
-                        <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
-                    </div>
-                </div>
-                <div class="flex items-center gap-x-5 text-base">
-                    <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
-                    <div class="w-full relative">
-                        <p>Chất lượng hàng đầu</p>
-                        <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
-                    </div>
-                </div>
-                <div class="flex items-center gap-x-5 text-base">
-                    <img src="./images/home/mark.svg" alt="" class="md:w-auto w-[36px]">
-                    <div class="w-full relative">
-                        <p>Trải nghiệm tốt nhất</p>
-                        <span class="sm:hidden block w-full h-[2px] bg-[#66CDF1] absolute mt-[2px]"></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="footer-content"></div>
 
-    <div class="text-center md:pb-20 pb-10">
-        <div class="flex justify-center">
-            <h3 class="text-[#66CDF1] md:text-4xl text-2xl font-bold mt-1 prose prose-lg">Đối tác của chúng tôi</h3>
-        </div>
-        <div class="md:mt-12 sm:mt-4 mt-2">
-            <div
-                    class="relative flex-wrap justify-between items-center xl:px-32 lg:px-20 md:px-12 px-4 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div id="splide-partner" class="splide lg:px-[80px] sm:px-[60px] px-[30px]">
-                    <div class="splide__track">
-                        <ul class="splide__list">
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/baoquocte.png" alt="baoquocte"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/tienphong.png" alt="tienphong"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="https://static-cms-sggp.epicdn.me/v4/web/styles/img/sggp-logo.svg?v1.0.1"
-                                         alt="sggp"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/dantri.svg" alt="dantri"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/batdongsan.jpg" alt="batdongsan"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vov.png" alt="vov"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/ngoisaovn.jpg" alt="ngoisaovn"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/phapluatplus.png" alt="phapluatplus"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/ttvh.jpg" alt="ttvh"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/trithucquocsong.png" alt="trithucquocsong"
-                                         class="object-cover object-tri w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/vietnambiz.png" alt="vietnambiz"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-[#616163] w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vietnammoi.png" alt="vietnammoi"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vneconomy.png" alt="vneconomy"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vtcnews.png" alt="vtcnews"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/baotintuc.jpg" alt="baotintuc"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/phunuvagiadinh.png" alt="phunuvagiadinh"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/bnews.jpg" alt="bnews"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/suckhoeviet.png" alt="suckhoeviet"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/docbao24h.jpeg" alt="docbao24h"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/mbbank.png" alt="mbbank"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vpbank.png" alt="vpbank"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vietcombank.png" alt="vietcombank"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vietinbank-insurance.png" alt="vietinbank"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/tnex.png" alt="tnex"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/vinhomes.webp" alt="vinhomes"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[16px]">
-                                    <img src="./images/partner/novaland.webp" alt="novaland"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/canifa.png" alt="canifa"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/goldilacgrow.png" alt="goldilacgrow"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] ">
-                                    <img src="./images/partner/wakamono.jpeg" alt="wakamono"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/yody.png" alt="yody"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/be.jpg" alt="be"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
-                                    <img src="./images/partner/ahamove.png" alt="ahamove"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
-                                    <img src="./images/partner/lazada.png" alt="lazada"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
-                                    <img src="./images/partner/logo-shopee.png" alt="shopee"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/shb.png" alt="shb"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
-                                    <img src="./images/partner/Nam_A_Bank_Logo.jpg" alt="Nam_A_Bank"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden">
-                                    <img src="./images/partner/logo-shinhan-Bank.jpg" alt="shinhan-bank"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/Báo_Pháp_Luật_TP.HCM.jpg" alt="Báo_Pháp_Luật_TP.HCM"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                        class="flex flex-shrink-0 relative item-slider rounded-full overflow-hidden flex items-center justify-center bg-white w-full h-[calc(100%-6px)] p-[1px] sm:p-[10px]">
-                                    <img src="./images/partner/Logo_TTXVN.png" alt="TTXVN"
-                                         class="object-cover object-center w-full"/>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/sendmail.js"></script>
+    <script>
+        $(function () {
+            $("#header-content").load("header.html");
+            $("#footer-content").load("footer.html");
+            $(".splide__arrow").addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-[100%]");
+            $("#splide-partner .splide__arrow").addClass("!bg-[transparent] !opacity-100 lg:text-xl");
+            $("#splide-ads .splide__arrow").addClass("!bg-[transparent] !opacity-100 sm:text-xl md:text-2xl lg:text-3xl");
 
-<div id="footer-content"></div>
+            $("#splide-solution .splide__pagination").addClass("!flex lg:!hidden");
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://smtpjs.com/v3/smtp.js"></script>
-<script src="./js/sendmail.js"></script>
-<script>
-    $(function () {
-        $("#header-content").load("header.html");
-        $("#footer-content").load("footer.html");
-        $(".splide__arrow").addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-[100%]");
-        $("#splide-partner .splide__arrow").addClass("!bg-[transparent] !opacity-100 lg:text-xl");
-        $("#splide-ads .splide__arrow").addClass("!bg-[transparent] !opacity-100 sm:text-xl md:text-2xl lg:text-3xl");
+            const arrow$ = $("#splide-phone .splide__arrow");
+            arrow$.addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-xl md:text-2xl")
+                .addClass("!bg-[transparent] !opacity-100");
+            $("#splide-phone .splide__arrows").addClass("bottom-[80px] sm:bottom-[70px] md:bottom-[70px] xl:bottom-[40px]");
+        });
 
-        $("#splide-solution .splide__pagination").addClass("!flex lg:!hidden");
+        $(window).resize(function () {
+            $("#splide-solution .splide__pagination").addClass("!flex lg:!hidden");
+        });
+    </script>
 
-        const arrow$ = $("#splide-phone .splide__arrow");
-        arrow$.addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-xl md:text-2xl")
-            .addClass("!bg-[transparent] !opacity-100");
-        $("#splide-phone .splide__arrows").addClass("bottom-[80px] sm:bottom-[70px] md:bottom-[70px] xl:bottom-[40px]");
-    });
-
-    $(window).resize(function () {
-        $("#splide-solution .splide__pagination").addClass("!flex lg:!hidden");
-    });
-</script>
-
-<script src="./js/solution.js"></script>
-<script src="./js/partner.js"></script>
-<script src="./js/ads.js"></script>
-<script src="./js/splide.min.js"></script>
-<script src="./js/phone.js"></script>
+    <script src="./js/solution.js"></script>
+    <script src="./js/partner.js"></script>
+    <script src="./js/ads.js"></script>
+    <script src="./js/splide.min.js"></script>
+    <script src="./js/phone.js"></script>
 </body>
 
 </html>
