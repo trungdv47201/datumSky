@@ -28,11 +28,14 @@
                                 class="font-['utm-aurora'] uppercase lg:text-4xl text-[35px] text-[white] sm:text-nowrap leading-[43.82px]">
                                 Master Digital Marketing<br />Cooperation in Vietnam
                             </div>
+
                             <div class="lg:mt-16 md:mt-12 mt-8">
                                 <button
-                                    class="rounded-full flex justify-between items-center gap-2 text-xl px-6 h-[41px] bg-button">
+                                    class="rounded-full flex justify-between items-center gap-2 text-xl px-6 pr-12 h-[41px] bg-button button-effect relative overflow-hidden hover:!bg-transparent">
+                                    <div class="circle"></div>
                                     <a href="#learn-about" class="opensans-regular">Tìm hiểu ngay</a>
-                                    <img src="./images/home/nexticon.svg" alt="" class="sm:w-[unset] w-6">
+                                    <img src="./images/home/nexticon.svg" alt=""
+                                        class="sm:w-[unset] w-6 absolute right-3">
                                 </button>
                             </div>
                         </div>
@@ -457,7 +460,8 @@
             </h3>
             <div
                 class="relative flex-wrap justify-between items-center xl:px-12 lg:px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div id="splide-phone" class="splide xl:px-[110px] lg:px-[80px] md:px-[45px] sm:px-[35px] px-[30px] cursor-grab">
+                <div id="splide-phone"
+                    class="splide xl:px-[110px] lg:px-[80px] md:px-[45px] sm:px-[35px] px-[30px] cursor-grab">
                     <div class="splide__track">
                         <ul class="splide__list !text-[#3163AF]">
                             <li
@@ -1092,6 +1096,19 @@
             arrow$.addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-xl md:text-2xl")
                 .addClass("!bg-[transparent] !opacity-100");
             $("#splide-phone .splide__arrows").addClass("bottom-[80px] sm:bottom-[70px] md:bottom-[70px] xl:bottom-[40px]");
+            $('.splide__arrow').append("<div class='circle'></div>");
+            $('.splide__arrow').addClass("overflow-hidden");
+            $('.splide__arrow svg').addClass("relative z-[1] fill-white");
+            $('.splide__arrow').hover(function () {
+                $(this).find("svg").css({ filter: "invert(0)", fill: "white" });
+            }, function () {
+                $(this).find("svg").css({ filter: "invert(0)", fill: '#FFFFFF' });
+            })
+            $('#splide-phone .splide__arrow').hover(function () {
+                $(this).find("svg").css({ filter: "invert(0)", fill: "white" });
+            }, function () {
+                $(this).find("svg").css({ filter: "invert(0)", fill: '#000000' });
+            })
         });
 
         $(window).resize(function () {

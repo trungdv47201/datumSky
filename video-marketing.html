@@ -12,6 +12,33 @@
     <link rel="stylesheet" href="./css/video-marketing.css" />
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'>
     <link rel="stylesheet" href="css/sliders.css">
+
+    <style>
+        .button-effect a {
+            position: relative;
+            transition: all 0.45s ease-Out;
+        }
+
+        .button-effect .circle {
+            width: 0%;
+            height: 0%;
+            opacity: 0;
+            line-height: 40px;
+            background: linear-gradient(270deg, #3163af 0%, #7c67d1 51.5%, #66cdf1 100%);
+            position: absolute;
+            transition: all 0.5s ease-Out;
+            top: 20px;
+            left: 50%;
+        }
+
+        .button-effect:hover .circle {
+            width: 200%;
+            height: 500%;
+            opacity: 1;
+            top: -70px;
+            left: -50%;
+        }
+    </style>
 </head>
 
 <body class="text-white bg-[#F5F6F6]">
@@ -27,15 +54,17 @@
                             class="uppercase xl:text-5xl lg:text-4xl md:text-3xl text-2xl utm-aurora text-white prose prose-lg text-nowrap">
                             video marketing
                         </div>
-                        <div
-                            class="text-white lg:w-3/4 md:w-2/3 w-full md:mt-6 sm:mt-4 lg:text-xl sm:text-lg text-sm">
+                        <div class="text-white lg:w-3/4 md:w-2/3 w-full md:mt-6 sm:mt-4 lg:text-xl sm:text-lg text-sm">
                             Lan tỏa thương hiệu và quảng bá doanh nghiệp một cách nhanh chóng.
                         </div>
                         <div class="lg:mt-16 md:mt-10 sm:mt-8 mt-4">
                             <button
-                                class="bg-gradient-to-b from-[#66CDF1] to-[#3163AF] rounded-full flex justify-between items-center gap-2 lg:text-xl lg:px-6 lg:py-2 md:text-base px-4 md:py-2 text-sm py-1">
-                                <a href="#learn-about">Tìm hiểu ngay</a>
-                                <img src="./images/home/nexticon.svg" alt="" class="sm:w-[unset] w-6">
+                                class="button-effect relative overflow-hidden bg-gradient-to-b from-[#66CDF1] to-[#3163AF] rounded-full flex justify-between items-center gap-2 lg:text-xl lg:px-6 lg:py-2 md:text-base px-4 md:py-2 text-sm py-1">
+                                <div class="circle"></div>
+                                <div class="flex gap-2 relative z-[1]">
+                                    <a href="#learn-about">Tìm hiểu ngay</a>
+                                    <img src="./images/home/nexticon.svg" alt="" class="sm:w-[unset] w-6">
+                                </div>
                             </button>
                         </div>
                     </div>
@@ -51,8 +80,7 @@
                 <h3
                     class="text-[#3163AF] font-['Open Sans'] font-normal uppercase tracking-[0.36em] leading-[30px] sm:leading-[45px] md:text-3xl sm:text-2xl text-xl font-[300]">
                     phân loại</h3>
-                <h3
-                    class="text-[#3163AF] lg:text-4xl md:text-3xl text-2xl utm-aurora sm:mt-1 prose prose-lg mx-auto">
+                <h3 class="text-[#3163AF] lg:text-4xl md:text-3xl text-2xl utm-aurora sm:mt-1 prose prose-lg mx-auto">
                     Video Marketing
                 </h3>
             </div>
@@ -135,7 +163,8 @@
 
     <section>
         <div class="relative flex justify-center items-center xl:min-h-auto min-h-[500px] overflow-hidden">
-            <div class="text-white w-full bg-[url('./images/video-marketing/video-marketing.svg')] bg-center bg-cover bg-no-repeat xl:py-32 lg:py-20 md:py-12 py-8">
+            <div
+                class="text-white w-full bg-[url('./images/video-marketing/video-marketing.svg')] bg-center bg-cover bg-no-repeat xl:py-32 lg:py-20 md:py-12 py-8">
                 <div
                     class="flex flex-wrap justify-between items-center xl:px-32 lg:px-20 md:px-12 px-4 pr-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
                     <div class="flex flex-col w-full">
@@ -252,8 +281,7 @@
                 <div
                     class="relative xl:px-32 lg:px-20 md:px-12 px-8 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
                     <div class="grid sm:grid-cols-2 grid-cols-1 w-full sm:py-16 py-6 md:px-28 px-0 gap-y-4" id="advise">
-                        <div
-                            class="flex items-center text-[#676767] lg:text-3xl md:text-2xl text-lg utm-aurora">
+                        <div class="flex items-center text-[#676767] lg:text-3xl md:text-2xl text-lg utm-aurora">
                             Tạo đột phá cho doanh nghiệp của bạn ngay hôm nay
                         </div>
                         <div class="flex flex-col w-full justify-end items-end box-send-mail">
@@ -262,9 +290,12 @@
                                     class="placeholder:text-[#666666] text-[#666666] w-full h-full text-center advise lg:text-lg md:text-base text-sm bg-transparent border border-[#666666] email">
                             </div>
                             <button
-                                class="sm:w-4/5 w-full bg-[#333333] text-white flex justify-center items-center font-['Open Sans'] uppercase lg:tracking-[0.32em] tracking-[0.28em] sm:leading-[40px] leading-[36px] opensans-bold send-mail">
-                                Gửi
-                                <img src="./images/home/paper-plane-white.svg" />
+                                class="button-effect relative overflow-hidden sm:w-4/5 w-full bg-[#333333] text-white flex justify-center items-center font-['Open Sans'] uppercase lg:tracking-[0.32em] tracking-[0.28em] sm:leading-[40px] leading-[36px] opensans-bold send-mail">
+                                <div class="circle"></div>
+                                <div class="flex relative z-[1]">
+                                    Gửi
+                                    <img src="./images/home/paper-plane-white.svg" />
+                                </div>
                             </button>
                         </div>
                     </div>
@@ -416,6 +447,14 @@
             $("#header-content").load("header.html");
             $(".splide__arrow").addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-xl md:text-2xl");
             $("#splide-video .splide__arrow").addClass("!bg-[transparent] !opacity-100 !top-[47%] sm:!top-[36%]");
+            $('.splide__arrow').append("<div class='circle'></div>");
+            $('.splide__arrow').addClass("overflow-hidden");
+            $('.splide__arrow svg').addClass("relative z-[1] fill-white invert-0");
+            $('.splide__arrow').hover(function () {
+                $(this).find("svg").css({ filter: "invert(0)", fill: "white" });
+            }, function () {
+                $(this).find("svg").css({ filter: "invert(0)", fill: '#AFAFAF' });
+            })
         });      
     </script>
 

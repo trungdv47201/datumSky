@@ -7,8 +7,8 @@
 }
 
 #splide-video .splide__arrow svg {
-    fill: #AFAFAF !important;
-    filter: unset !important;
+    fill: #AFAFAF;
+    filter: unset;
 }
 
 #splide-phone .splide__slide.is-active .img-phone-ads {
@@ -20,7 +20,7 @@
 }
 
 #splide-phone .splide__arrow svg {
-    filter: invert(0) !important;
+    filter: invert(0);
 }
 
 #splide-phone .splide__slide.is-active .img-phone-ads::before {
