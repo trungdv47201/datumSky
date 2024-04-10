@@ -12,6 +12,34 @@
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'>
     <link rel="stylesheet" href="css/sliders.css">
     <link rel="stylesheet" href="css/video-marketing.css">
+
+    <style>
+        .splide__arrow a {
+            position: relative;
+            transition: all 0.45s ease-Out;
+        }
+
+        .splide__arrow .circle {
+            width: 0%;
+            height: 0%;
+            opacity: 0;
+            line-height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(270deg, #3163af 0%, #7c67d1 51.5%, #66cdf1 100%);
+            position: absolute;
+            transition: all 0.5s ease-Out;
+            top: 20px;
+            left: 50%;
+        }
+
+        .splide__arrow:hover .circle {
+            width: 200%;
+            height: 500%;
+            opacity: 1;
+            top: -70px;
+            left: -50%;
+        }
+    </style>
 </head>
 
 <body class="text-white bg-[#190B3C]">
