@@ -1,6 +1,7 @@
 document.addEventListener( 'DOMContentLoaded', function () {
   new Splide('#splide-phone', {
     type: 'loop',
+    autoplay: "playing",
     perPage: 3,
     focus: 'center',
     updateOnMove: true,

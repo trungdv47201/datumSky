@@ -52,9 +52,11 @@
                                     </div>
                                     <div class="col-start-2">
                                         <button id="send-mail" type="button"
-                                            class="float-right mt-3 bg-[#3163AF] text-white flex justify-center items-center font-['Open Sans'] uppercase font-normal lg:tracking-[0.36em] tracking-[0.28em] lg:leading-[45px] leading-[36px] opensans-bold px-[20px] send-mail">
-                                            Gửi
-                                            <img src="./images/home/paper-plane-white.svg" />
+                                            class="button-rectangle relative overflow-hidden float-right mt-3 bg-[#3163AF] text-white flex justify-center items-center font-['Open Sans'] uppercase font-normal lg:tracking-[0.36em] tracking-[0.28em] lg:leading-[45px] leading-[36px] opensans-bold px-[20px] send-mail">
+                                            <div class="flex items-center gap-1">
+                                                Gửi
+                                                <i class="fa-regular fa-paper-plane"></i>
+                                            </div>
                                         </button>
                                     </div>
                                 </div>
@@ -141,13 +143,13 @@
                             </div>
                             <div
                                 class="sm:flex hidden md:flex-col flex-row mt-8 text-[#180A3C] gap-3 lg:mr-12 mr-0 lg:ml-20 md:ml-8 justify-center">
-                                <a href="#">
+                                <a href="#" class="button-circle">
                                     <img src="/images/home/zalo-white.svg" class="h-8 min-w-8" />
                                 </a>
-                                <a href="#">
+                                <a href="#" class="button-circle">
                                     <img src="/images/home/facebook-white.svg" class="h-8 min-w-8" />
                                 </a>
-                                <a href="#">
+                                <a href="#" class="button-circle">
                                     <img src="/images/home/twitter-white.svg" class="h-8 min-w-8" />
                                 </a>
                             </div>
@@ -193,7 +195,7 @@
         params.set("Full name", "name");
         params.set("Phone number", "phone");
         params.set("Note", "note");
-       
+
         send(params, "email-template.html");
     </script>
 </body>

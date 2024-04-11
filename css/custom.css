@@ -287,7 +287,7 @@ input[type="number"] {
 }
 
 .active {
-  background-color: #7C67D1 !important;
+  background-color: #7c67d1 !important;
 }
 
 .block-ellipsis-2 {
@@ -365,4 +365,84 @@ input[type="number"] {
   opacity: 1;
   top: -70px;
   left: -50%;
+}
+
+.shadow {
+  text-shadow: 0 0 1px #3163af, 0 0 1px #3163af, 0 0 1px #3163af,
+    0 0 1px #3163af;
+}
+
+.button-rectangle {
+  --b: 2px;
+  /* border thickness */
+  --s: 0em;
+  /* size of the corner */
+  --color: #3163af;
+ 
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-rectangle:hover,
+.button-rectangle:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-rectangle:active {
+  background: #ffffff;
+  color: #3163af;
+}
+
+.button-circle {
+  --b: 2px;
+  /* border thickness */
+  --s: 0;
+  /* size of the corner */
+  --color: white;
+
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  border-radius: 100%;
+}
+
+.button-circle:hover,
+.button-circle:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+  border-radius: 100%;
+}
+
+.button-circle:active {
+  background: #ffffff;
 }
