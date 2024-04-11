@@ -337,7 +337,7 @@ input[type="number"] {
 .shadow-inner-custom {
   box-shadow: 0px 4px 4px 0px #bcdeea inset;
 }
-.shadow-drop-custom {
+.shadow-inner-custom:hover .shadow-drop-custom {
   box-shadow: 0px 4px 4px 0px #3163af59;
 }
 
