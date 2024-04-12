@@ -1,8 +1,8 @@
 document.addEventListener( 'DOMContentLoaded', function () {
   new Splide('#splide-phone', {
     type: 'loop',
-    autoplay: "playing",
     perPage: 3,
+    autoplay: "playing",
     interval: 3000,
     speed: 800,
     focus: 'center',
@@ -23,7 +23,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
         gap: '8rem',
       },
       1024: {
-        gap: '9rem',
+        gap: '9em',
       },
       1280: {
         gap: '12rem',
