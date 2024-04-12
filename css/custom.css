@@ -512,3 +512,35 @@ input[type="number"] {
   background: #ffffff;
   color: #3163af !important;
 }
+
+.text-nowrap-important {
+  text-wrap: nowrap !important;
+  white-space: nowrap !important;
+}
+
+.button-white-border {
+  --b: 2px;
+  /* border thickness */
+  --s: 0em;
+  /* size of the corner */
+  --color: #ffffff;
+  --_p: var(--s);
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-white-border:hover,
+.button-white-border:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-white-border:active {
+  background: #ffffff;
+  color: #3163af !important;
+}
