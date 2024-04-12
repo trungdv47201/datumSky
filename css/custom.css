@@ -45,6 +45,7 @@
 
 body {
   font-family: opensans-regular;
+  overflow-x: hidden;
 }
 
 .utm-aurora {
@@ -485,7 +486,7 @@ input[type="number"] {
 }
 
 .button-white {
-  --b: 1px;
+  --b: 2px;
   /* border thickness */
   --s: 0em;
   /* size of the corner */
