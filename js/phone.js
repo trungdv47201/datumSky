@@ -3,6 +3,8 @@ document.addEventListener( 'DOMContentLoaded', function () {
     type: 'loop',
     autoplay: "playing",
     perPage: 3,
+    interval: 3000,
+    speed: 800,
     focus: 'center',
     updateOnMove: true,
     pagination: false,

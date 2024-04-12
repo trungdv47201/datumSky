@@ -5,6 +5,7 @@
     .button-effect {
         overflow: hidden;
     }
+
     .button-effect a {
         position: relative;
         transition: all 0.45s ease-Out;
@@ -34,29 +35,6 @@
 <body>
     <footer>
         <div class="bg-[#EFEFEF]">
-            <div
-                class="relative xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div class="md:flex md:items-center grid grid-cols-1 w-full py-16 text-center sm:text-left" id="advise">
-                    <div
-                        class="text-[#190B3C] uppercase md:text-2xl text-xl font-black opensans-bold !text-nowrap sm:mr-8">
-                        nhận tư vấn
-                    </div>
-                    <div class="flex sm:flex-row flex-col w-full md:mt-0 mt-4 sm:gap-[0.5px] gap-2 box-send-mail">
-                        <div class="sm:w-1/2 w-full lg:leading-[45px] leading-[36px] min-h-[36px]">
-                            <input type="email" placeholder="Nhập email tại đây" id="email"
-                                class="email text-black w-full h-full text-center advise lg:text-xl md:text-lg text-base px-4 focus:outline-none border border-[#666666]">
-                        </div>
-                        <button
-                            class="button-effect relative overflow-hidden sm:w-1/2 w-full bg-[#3163AF] text-white flex justify-center items-center opensans-bold uppercase font-normal lg:tracking-[0.36em] tracking-[0.28em] lg:leading-[45px] leading-[36px] font-bold send-mail">
-                            <div class="circle"></div>
-                            <div class="flex items-center justify-center relative z-[1]">
-                                Gửi
-                                <img src="/images/home/paper-plane-white.svg" />
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            </div>
             <hr class="border-[#66CDF1]">
             <div class="bg-[#3163AF]">
                 <div
@@ -129,11 +107,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        const params = new Map();
-        send(params, "/email-template.html");
-    </script>
 </body>
 
 </html>

@@ -113,84 +113,12 @@
         </div>
     </section>
 
-    <footer>
-        <div class="bg-[#EFEFEF]">
-            <hr class="border-[#66CDF1]">
-            <div class="bg-[#3163AF]">
-                <div
-                    class="relative xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                    <div class="flex md:flex-row flex-col md:items-center items-start sm:py-12 py-8 justify-center">
-                        <div class="md:w-2/5 w-full sm:block hidden">
-                            <a href="index.html" class="flex justify-center">
-                                <img src="/images/home/logo-white.svg" />
-                            </a>
-                        </div>
-                        <div
-                            class="flex md:flex-row flex-col md:w-3/5 w-full lg:mt-0 mt-4 text-[#180A3C] lg:ml-16 items-center justify-end">
-                            <div class="sm:w-4/5 w-full text-white">
-                                <h3
-                                    class=" lg:text-left font-['Open Sans'] font-normal uppercase leading-[45px] md:text-2xl text-xl font-thin md:text-left text-center sm:text-nowrap">
-                                    Công ty Cổ phần DatumSKy</h3>
-                                <div class="flex gap-x-2 mt-2 items-baseline">
-                                    <img src="/images/home/address.svg" alt="address">
-                                    <p>
-                                        Tầng 2, số 3/80 phố Hoàng Ngân, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà
-                                        Nội,
-                                        Việt
-                                        Nam
-                                        <br /> Mã số thuế: <b class="opensans-bold">0109937753</b>
-                                    </p>
-                                </div>
-                                <div class="flex gap-x-2">
-                                    <img src="/images/home/email.svg" alt="email">
-                                    <p>business@datumsky.com</p>
-                                </div>
-                                <div class="flex gap-x-2 opensans-bold">
-                                    <img src="/images/home/phone.svg" alt="phone">
-                                    <p><b>077.723.7708</b></p>
-                                </div>
-                            </div>
-                            <div
-                                class="sm:flex hidden md:flex-col flex-row mt-8 text-[#180A3C] gap-3 lg:mr-12 mr-0 lg:ml-20 md:ml-8 justify-center">
-                                <a href="#" class="button-circle">
-                                    <img src="/images/home/zalo-white.svg" class="h-8 min-w-8" />
-                                </a>
-                                <a href="#" class="button-circle">
-                                    <img src="/images/home/facebook-white.svg" class="h-8 min-w-8" />
-                                </a>
-                                <a href="#" class="button-circle">
-                                    <img src="/images/home/twitter-white.svg" class="h-8 min-w-8" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bg-white text-[#666666] py-3 block sm:hidden">
-            <div
-                class="relative xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div class="flex justify-between">
-                    <div class="sm:text-base text-sm">{C} 2024 All right reserved</div>
-                    <div class="flex text-[#180A3C] gap-1 justify-center">
-                        <a href="#">
-                            <img src="/images/home/zalo-url.svg" class="h-6 min-w-6" />
-                        </a>
-                        <a href="#">
-                            <img src="/images/home/facebook.svg" class="h-6 min-w-6" />
-                        </a>
-                        <a href="#">
-                            <img src="/images/home/twitter.svg" class="h-6 min-w-6" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div id="footer-content"></div>
 
     <script>
         $(function () {
             $("#header-content").load("header.html");
+            $("#footer-content").load("footer.html");
         });
 
         $('.options-dropdown').on("click", function () {

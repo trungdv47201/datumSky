@@ -1,6 +1,9 @@
 document.addEventListener( 'DOMContentLoaded', function () {
   new Splide('#splide-video', {
     type: 'loop',
+    autoplay: "playing",
+    interval: 4000,
+    speed: 800,
     perPage: 3,
     focus: 'center',
     updateOnMove: true,

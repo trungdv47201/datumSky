@@ -32,11 +32,10 @@
 
                             <div class="xl:mt-28 lg:mt-20 mt-14">
                                 <button
-                                    class="rounded-full flex justify-between items-center gap-2 text-xl px-6 pr-12 h-[41px] bg-button button-effect relative overflow-hidden hover:!bg-transparent">
+                                    class="button-bg-none rounded-full flex justify-between items-center text-xl px-6 pr-12 h-[41px] bg-button button-effect relative overflow-hidden hover:!bg-transparent hover:text-white">
                                     <div class="circle"></div>
                                     <a href="#learn-about" class="opensans-regular">Tìm hiểu ngay</a>
-                                    <img src="./images/home/nexticon.svg" alt=""
-                                        class="sm:w-[unset] w-6 absolute right-3">
+                                    <i class="fa-solid fa-arrow-right sm:w-[unset] w-6 absolute right-4"></i>
                                 </button>
                             </div>
                         </div>
@@ -299,6 +298,7 @@
         </div>
     </section>
 
+    <div id="form-send-mail-content"></div>
     <div id="footer-content"></div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -311,6 +311,7 @@
             $("#solution-content").load("solution.html");
             $("#marketing-platform-content").load("marketing-platform.html");
             $("#header-content").load("header.html");
+            $("#form-send-mail-content").load("form-send-mail.html");
             $("#footer-content").load("footer.html");
 
             $(".splide__arrow").addClass("w-[24px] sm:w-[2em] h-[24px] sm:h-[2em] text-[12px] sm:text-[100%]");
