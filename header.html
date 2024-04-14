@@ -6,74 +6,49 @@
     }
 
     .button-effect a {
-        position: relative;
         transition: all 0.45s ease-Out;
     }
 
-    .button-effect .circle {
-        width: 0%;
-        height: 0%;
-        opacity: 0;
-        line-height: 40px;
+    .button-effect:hover {
         background: linear-gradient(270deg, #3163af 0%, #7c67d1 51.5%, #66cdf1 100%);
-        position: absolute;
         transition: all 0.5s ease-Out;
-        top: 20px;
-        left: 50%;
     }
 
-    .button-effect:hover .circle {
-        width: 200%;
-        height: 500%;
-        opacity: 1;
-        top: -70px;
-        left: -50%;
+    .button-effect:active {
+        background: transparent;
     }
 </style>
 
 <body>
-    <!-- <header class="fixed z-[999] top-0 start-0 w-full shadow-[0px_4px_4px_0px_#00000026] opensans-semi-bold">
-        <nav class="bg-[#3163AF] relative sm:h-[60px] h-[40px]">
+    <header class="fixed z-[999] top-0 start-0 w-full shadow-[0px_4px_4px_0px_#00000026] opensans-semi-bold">
+        <nav class="bg-[#3163AF] relative">
             <div
-                class="w-full h-full flex items-center justify-between flex-wrap xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div class="flex items-center flex-shrink-0 text-white mr-6">
-                    <a href="/index.html" class="flex items-center">
-                        <img src="/images/home/logo-white.svg" class="sm:py-2 sm:h-[60px] h-[40px]" alt="datumSky Logo"
-                            id="logo" />
-                    </a>
-                </div>
-                <div class="block lg:hidden">
-                    <button
-                        class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <title>Menu</title>
-                            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                        </svg>
+                class="xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md flex items-center justify-between">
+                <a href="/index.html" class="flex items-center">
+                    <img src="/images/home/logo-white.svg" class="sm:py-2 sm:h-[60px] h-[40px]" alt="datumSky Logo"
+                        id="logo" />
+                </a>
+                <div class="md:hidden flex items-center">
+                    <button type="button" id="btn-menu-mobile" class="text-[#66CDF1] text-xl p-[0.5rem]">
+                        <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
-                <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-                    <div class="text-sm lg:flex-grow lg:flex justify-end">
-                        <a href="#responsive-header"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                            Docs
-                        </a>
-                        <a href="#responsive-header"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                            Examples
-                        </a>
-                        <a href="#responsive-header"
-                            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white">
-                            Blog
-                        </a>
+
+                <div class="md:flex hidden items-center gap-6">
+                    <div class="lg:hidden flex items-center order-1">
+                        <button type="button" id="btn-menu-ipad" class="text-[#66CDF1] text-xl p-[0.5rem]">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
                     </div>
-                    <div class="lg:flex hidden">
+                    <div class="opensans-regular lg:flex hidden items-center" id="menu-content"></div>
+                    <div class="flex items-center" id="feature">
                         <div class="sm:flex items-center md:opensans-semi-bold opensans-regular">
                             <a href="/register.html"
-                                class="button-effect relative overflow-hidden sm:mr-8 mr-0 rounded-full sm:bg-[#66CDF1] flex justify-between items-center text-white bg-primary-700 hover:bg-primary-800 font-medium text-sm sm:pl-4 sm:pr-6 sm:py-1.5 mr-3 focus:outline-none">
-                                <div class="circle"></div>
+                                class="button-white button-effect relative overflow  rounded-full sm:bg-[#66CDF1] flex justify-between items-center text-white bg-primary-700 hover:bg-primary-800 font-medium text-sm sm:pl-4 sm:pr-6 sm:py-1.5 focus:outline-none">
+                                <div class="circle sm:block "></div>
                                 <div class="relative z-[1] flex items-center">
                                     <div
-                                        class="rounded-full bg-white w-6 h-6 text-[#66CDF1] sm:flex hidden justify-center items-center sm:mr-3">
+                                        class="rounded-full bg-white w-6 h-6 text-[#66CDF1] sm:flex  justify-center items-center sm:mr-3">
                                         <i class="fa-solid fa-phone-volume"></i>
                                     </div>
                                     <span
@@ -83,18 +58,12 @@
                                 </div>
                             </a>
                             <div class="sm:text-sm text-[16px] py-2 pr-4 pl-3 sm:py-0 sm:px-0">
-                                <div class="sm:hidden flex text-white  items-center gap-2 font-medium"
-                                    id="dropdown-language">
-                                    <p>Ngôn ngữ</p>
-                                    <img src="/images/facebook-ads/right-arrow.svg" alt=""
-                                        class="rotate-90 w-[16px] h-[16px]">
-                                </div>
-                                <div class="hidden sm:flex gap-1 pl-8" id="language">
-                                    <button id="vi" href=""
+                                <div class=" sm:flex gap-1 pl-8">
+                                    <button id="vi"
                                         class="translate sm:border-2 font-medium sm:rounded-md w-8 flex justify-center items-center hover:bg-[#7C67D1] active">
                                         VI
                                     </button>
-                                    <button id="en" href=""
+                                    <button id="en"
                                         class="translate sm:border-2 font-medium sm:rounded-md w-8 flex justify-center items-center hover:bg-[#7C67D1]">
                                         EN
                                     </button>
@@ -104,269 +73,38 @@
                     </div>
                 </div>
             </div>
-        </nav>
-    </header> -->
-    <header class="fixed z-[999] top-0 start-0 w-full shadow-[0px_4px_4px_0px_#00000026] opensans-semi-bold">
-        <nav class="bg-[#3163AF] relative" id="nav">
-            <div
-                class="grid grid-cols-[repeat(20,minmax(0,1fr))] justify-between items-center xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                <div class="xl:col-span-8 lg:col-span-7 col-span-5 flex">
-                    <a href="/index.html" class="flex items-center">
-                        <img src="/images/home/logo-white.svg" class="sm:py-2 sm:h-[60px] h-[40px]" alt="datumSky Logo"
-                            id="logo" />
-                    </a>
-                </div>
-                <div class="col-span-2 sm:block hidden"></div>
-                <div class="sm:flex hidden items-center lg:order-2 gap-3 lg:col-span-4 sm:col-start-[10] xl:justify-end lg:justify-start justify-end sm:row-start-[unset] row-start-3 col-span-10 sm:pb-0 pb-[20px]"
-                    id="feature">
-                    <div class="sm:flex items-center md:opensans-semi-bold opensans-regular">
-                        <a href="/register.html"
-                            class="button-white button-effect relative overflow-hidden rounded-full sm:bg-[#66CDF1] flex justify-between items-center text-white bg-primary-700 hover:bg-primary-800 font-medium text-sm sm:pl-4 sm:pr-6 sm:py-1.5 focus:outline-none">
-                            <div class="circle"></div>
-                            <div class="relative z-[1] flex items-center">
-                                <div
-                                    class="rounded-full bg-white w-6 h-6 text-[#66CDF1] sm:flex hidden justify-center items-center sm:mr-3">
-                                    <i class="fa-solid fa-phone-volume"></i>
-                                </div>
-                                <span
-                                    class="block !text-nowrap py-2 pr-4 pl-3 sm:py-0 sm:px-0 text-[16px] sm:uppercase min-w-[63px]">
-                                    Tư vấn
-                                </span>
-                            </div>
-                        </a>
-                        <div class="sm:text-sm text-[16px] py-2 pr-4 pl-3 sm:py-0 sm:px-0">
-                            <div class="sm:hidden flex text-white  items-center gap-2 font-medium"
-                                id="dropdown-language">
-                                <p>Ngôn ngữ</p>
-                                <img src="/images/facebook-ads/right-arrow.svg" alt=""
-                                    class="rotate-90 w-[16px] h-[16px]">
-                            </div>
-                            <div class="hidden sm:flex gap-1 pl-8" id="language">
-                                <button id="vi" href=""
-                                    class="translate sm:border-2 font-medium sm:rounded-md w-8 flex justify-center items-center hover:bg-[#7C67D1] active">
-                                    VI
-                                </button>
-                                <button id="en" href=""
-                                    class="translate sm:border-2 font-medium sm:rounded-md w-8 flex justify-center items-center hover:bg-[#7C67D1]">
-                                    EN
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:hidden sm:col-span-1 col-span-2 col-start-[19] flex items-center justify-end">
-                    <button type="button"
-                        class="text-[#66CDF1] inline-flex items-center ml-1 text-xl rounded-lg menu p-[5px]">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-                <div
-                    class="opensans-regular lg:col-span-6 lg:row-start-[unset] row-start-2 col-span-full sm:justify-center lg:justify-between items-center w-full hidden lg:flex lg:pb-0 sm:pb-5 lg:w-auto lg:order-1 mobile-menu">
-                    <ul class="flex mt-4 font-medium sm:flex-row flex-col lg:space-x-10 lg:mt-0 text-white"
-                        id="list-active-line">
-                        <li class="dropdown dropdown1 relative py-2 pr-4 pl-3 lg:p-0">
-                            <div class="flex items-center gap-2 cursor-pointer" id="dropdown-service">
-                                <a class="lang  opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block"
-                                    id="service">
-                                    Dịch Vụ
-                                </a>
-                                <img src="/images/facebook-ads/right-arrow.svg" alt=""
-                                    class="rotate-90 w-[16px] h-[16px] sm:hidden">
-                            </div>
-                            <div
-                                class="dropdown-menu dropdown-menu-service hidden sm:absolute right-0 lg:pt-6 sm:pt-8 pt-4 sm:shadow-xl">
-                                <ul
-                                    class="bg-[#3163AF] text-white sm:border-l-4 sm:border-[#D9D9D9] submenu-item sm:py-10 lg:pt-10 sm:pt-6">
-                                    <li class="bg-[#3163AF] text-white">
-                                        <a class="sm:py-3 py-1 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
-                                            href="/branding.html">Branding</a>
-                                    </li>
-                                    <li class="bg-[#3163AF] text-white dropdown dropdown1">
-                                        <div class="flex items-center gap-2 cursor-pointer w-full"
-                                            id="dropdown-ads-network">
-                                            <a class="w-full sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
-                                                id="ads-network">Ads Network </a>
-                                            <img src="/images/facebook-ads/right-arrow.svg" alt=""
-                                                class="rotate-90 w-[16px] h-[16px] sm:hidden">
-                                        </div>
-
-                                        <div
-                                            class="dropdown-menu dropdown-menu-ads-network hidden sm:shadow-xl sm:absolute left-[100%] top-0 h-full lg:pt-6 sm:pt-8 lg:w-[200%] md:w-[150%] sm:w-[120%]">
-                                            <ul class="w-full sm:bg-[#D9D9D9] text-black sm:py-10 lg:pt-10 sm:pt-6 flex"
-                                                id="list-active-dot">
-                                                <div>
-                                                    <li class="relative sm:text-black text-white">
-                                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
-                                                            href="/push-notification.html">Push Notification Network</a>
-                                                    </li>
-                                                    <li class="relative sm:text-black text-white">
-                                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
-                                                            href="/video-marketing.html">Video Ads</a>
-                                                    </li>
-                                                    <li class="relative sm:text-black text-white">
-                                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
-                                                            href="/facebook-ads.html">Facebook Ads</a>
-                                                    </li>
-                                                    <li class="relative sm:text-black text-white">
-                                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
-                                                            href="/google-ads.html">Google Ads</a>
-                                                    </li>
-                                                    <li class="relative sm:text-black text-white">
-                                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
-                                                            href="/tiktok-ads.html">Tiktok Ads</a>
-                                                    </li>
-                                                </div>
-                                                <div class="py-16 px-12 w-full bg-[#D9D9D9] lg:block hidden">
-                                                    <img src="/images/home/robot.svg" alt="">
-                                                </div>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="bg-[#3163AF] text-white">
-                                        <a class="sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
-                                            href="/sms-brandname.html">SMS
-                                            Brandname</a>
-                                    </li>
-                                    <li class="bg-[#3163AF] text-white">
-                                        <a class="sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
-                                            href="/performance-marketing.html">Performance Marketing</a>
-                                    </li>
-                                    <li class="bg-[#3163AF] text-white">
-                                        <a class="sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
-                                            href="/master-channel.html">Master
-                                            Channel</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="py-2 pr-4 pl-3 lg:p-0">
-                            <a href="/blog.html" id="blog"
-                                class="opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
-                                Blog</a>
-                        </li>
-                        <li class="py-2 pr-4 pl-3 lg:p-0">
-                            <a href="/contact.html" id="contact"
-                                class="opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
-                                Liên Hệ</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <div class="opensans-regular items-center py-5 hidden" id="menu-ipad-content"></div>
+            <div class="opensans-regular hidden" id="menu-mobile-content"></div>
         </nav>
     </header>
 
     <script>
-        $('#list-active-dot a').each(function () {
-            const key = $(this).attr('href');
-            const currentUrl = window.location.href;
-            if (currentUrl.includes(key) && key != '#') {
-                $(this).parent('li').addClass('active-dot');
-                $('#ads-network').addClass('menu-active-service');
-                $('#service').addClass('menu-active');
-            }
-        });
-
-        $('#list-active-line a:not(.menu-service)').each(function () {
-            const key = $(this).attr('href');
-            const currentUrl = window.location.href;
-            if (currentUrl.includes(key) && key != '#') {
-                $(this).addClass('menu-active');
-            }
-        });
-
-        $('#list-active-line a.menu-service').each(function () {
-            const key = $(this).attr('href');
-            const currentUrl = window.location.href;
-            if (currentUrl.includes(key) && key != '#') {
-                $(this).addClass('menu-active-service');
-                $('#service').addClass('menu-active');
-            }
-        });
-
-        $('.menu').on('click', function () {
-            $('.mobile-menu').toggleClass('!flex');
-            $("#feature").toggleClass('sm:flex hidden');
-            $("#feature").toggleClass('sm:flex');
-            $("body").toggleClass('overflow-hidden');
-        });
-
-        $("#dropdown-language").on('click', function () {
-            $("#language").toggleClass("hidden sm:flex");
-            $("#language").addClass("flex flex-col sm:flex-row");
-            $(this).find('img').toggleClass("-rotate-90");
-        });
-
-        $("#dropdown-service").on('click', function () {
-            $(this).find('img').addClass("-rotate-90");
-        });
-
-        $("#dropdown-ads-network").on('click', function () {
-            $(this).find('img').addClass("-rotate-90");
-        });
-    </script>
-
-    <script src="/js/language.js"></script>
-
-    <script>
         $(function () {
-            const lang = sessionStorage.getItem("lang");
-            if (lang != null) {
-                $('.lang').each(function (index, element) {
-                    const key = $(this).attr('key');
-                    $(this).text(arrLang[lang][key]);
-                })
+            $("#menu-content").load("/menu.html");
+            $("#menu-ipad-content").load("/menu-ipad.html");
+            $("#menu-mobile-content").load("/menu-mobile.html");
 
-                $('.translate').each(function () {
-                    const $ele = $(this);
-                    const id = $ele.attr('id');
-                    if (lang == id) {
-                        $ele.addClass('active');
-                    } else {
-                        $ele.removeClass('active');
-                    }
-                });
-            }
+            $('#btn-menu-ipad').on('click', function () {
+                $('#menu-ipad-content').removeClass("!hidden");
+                $('#menu-ipad-content').toggle("");
+            });
+
+            $('#btn-menu-mobile').on('click', function () {
+                $("body").toggleClass('overflow-hidden');
+                $('#menu-mobile-content').removeClass("!hidden");
+                $('#menu-mobile-content').toggle("");
+            });
         });
 
         $(window).resize(function () {
-            $('.mobile-menu').removeClass('!flex');
-            $("#feature").addClass('sm:flex hidden');
+            $('#menu-ipad-content').addClass("!hidden");
+            $("#menu-ipad-content").css("display", "none");
+            $('#menu-mobile-content').addClass("!hidden");
+            $("#menu-mobile-content").css("display", "none");
             $("body").removeClass('overflow-hidden');
-            $(".dropdown .dropdown-menu").removeClass("flex");
-            $(".dropdown .dropdown-menu").addClass("hidden");
-        });
-
-        $(".dropdown2").on("click", function () {
-            const dropdown$ = $(this).find(".dropdown-menu").first().attr("class");
-            if (dropdown$.includes("dropdown-menu-ads-network")) {
-                const adsNetwork$ = $(".dropdown-menu-ads-network");
-                if (adsNetwork$.attr("class").includes("hidden")) {
-                    adsNetwork$.removeClass("hidden");
-                    adsNetwork$.addClass("flex");
-                    adsNetwork$.closest(".dropdown2").find("img").addClass("-rotate-90");
-                } else {
-                    adsNetwork$.removeClass("flex");
-                    adsNetwork$.addClass("hidden");
-                    adsNetwork$.closest(".dropdown2").find("img").removeClass("-rotate-90");
-                }
-            } else {
-                const service$ = $(".dropdown-menu-service");
-                service$.removeClass("hidden");
-                service$.addClass("flex");
-            }
-        });
-
-        document.addEventListener('click', function (event) {
-            var nav = document.getElementById('nav');
-            const menu = $('.mobile-menu').attr('class');
-            if (menu.includes("!flex") && !nav.contains(event.target)) {
-                $('.mobile-menu').toggleClass('!flex');
-                $("#feature").toggleClass('sm:flex hidden');
-                $("#feature").toggleClass('sm:flex');
-                $("body").toggleClass('overflow-hidden');
-            }
         });
     </script>
+
 </body>
 
 </html>

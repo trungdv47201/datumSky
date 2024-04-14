@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<style>
+    #dropdownAdsNetwork_ipad ul div>li a::after {
+        transition: width 0s ease 0s, left 0s ease 0s !important;
+        width: 0 !important;
+    }
+
+    #dropdownService_ipad ul>li a::after {
+        bottom: -2;
+        content: "";
+        display: block;
+        position: absolute;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    #dropdownService_ipad ul>li:hover a::after {
+        left: 4rem;
+        width: calc(100% - 4rem);
+        background: white;
+        height: 2px;
+        position: absolute;
+    }
+
+    #dropdownAdsNetwork_ipad ul div>li:hover a::after {
+        content: "";
+        width: 8px !important;
+        height: 8px;
+        background: #3163af;
+        border-radius: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 2.5rem;
+        position: absolute;
+    }
+
+    .list-active-line>li>a::after,
+    .list-active-line>li>div>a::after {
+        bottom: -2;
+        content: "";
+        display: block;
+        position: absolute;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+
+    .list-active-line>li:hover>a::after,
+    .list-active-line>li:hover>div>a::after {
+        width: calc(100%);
+        background: white;
+        height: 2px;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <ul class="flex font-medium flex-row gap-10 text-white list-active-line justify-center">
+        <li>
+            <div class="flex items-center gap-2 cursor-pointer" id="dropdownDelayService_ipad"
+                data-dropdown-toggle="dropdownService_ipad" data-dropdown-delay="500" data-dropdown-trigger="hover"
+                data-dropdown-placement="left" data-dropdown-offset-distance="-50" data-dropdown-offset-skidding="210">
+                <a
+                    class="lang opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
+                    Dịch vụ
+                </a>
+            </div>
+            <div class="hidden sm:shadow-xl" id="dropdownService_ipad">
+                <ul aria-labelledby="dropdownDelayService_ipad"
+                    class="bg-[#3163AF] text-white sm:border-l-4 sm:border-[#D9D9D9] submenu-item sm:py-10 lg:pt-10 sm:pt-6">
+                    <li class="bg-[#3163AF] text-white">
+                        <a class="sm:py-3 py-1 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
+                            href="/branding.html">Branding</a>
+                    </li>
+                    <li class="bg-[#3163AF] text-white dropdown">
+                        <div class="flex items-center gap-2 cursor-pointer w-full" id="dropdownDelayAdsNetwork_ipad"
+                            data-dropdown-toggle="dropdownAdsNetwork_ipad" data-dropdown-delay="100"
+                            data-dropdown-trigger="hover" data-dropdown-placement="right"
+                            data-dropdown-offset-distance="0" data-dropdown-offset-skidding="60">
+                            <a
+                                class="w-full sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white">Ads
+                                Network </a>
+                        </div>
+                        <div class="hidden sm:shadow-xl w-[150%] overflow-hidden" id="dropdownAdsNetwork_ipad">
+                            <ul class="w-full sm:bg-[#D9D9D9] text-black flex items-center overflow-hidden py-12 pt-14"
+                                aria-labelledby="dropdownDelayAdsNetwork_ipad">
+                                <div>
+                                    <li class="relative sm:text-black text-white">
+                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
+                                            href="/push-notification.html">Push Notification
+                                            Network</a>
+                                    </li>
+                                    <li class="relative sm:text-black text-white">
+                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
+                                            href="/video-marketing.html">Video Ads</a>
+                                    </li>
+                                    <li class="relative sm:text-black text-white">
+                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
+                                            href="/facebook-ads.html">Facebook Ads</a>
+                                    </li>
+                                    <li class="relative sm:text-black text-white">
+                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
+                                            href="/google-ads.html">Google Ads</a>
+                                    </li>
+                                    <li class="relative sm:text-black text-white">
+                                        <a class="sm:py-2 py-1 px-8 pl-16 sm:text-lg text-base block !text-nowrap relative"
+                                            href="/tiktok-ads.html">Tiktok Ads</a>
+                                    </li>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="bg-[#3163AF] text-white">
+                        <a class="sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
+                            href="/sms-brandname.html">SMS
+                            Brandname</a>
+                    </li>
+                    <li class="bg-[#3163AF] text-white">
+                        <a class="sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
+                            href="/performance-marketing.html">Performance Marketing</a>
+                    </li>
+                    <li class="bg-[#3163AF] text-white">
+                        <a class="sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
+                            href="/master-channel.html">Master
+                            Channel</a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="">
+            <a href="/blog.html"
+                class="opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
+                Blog</a>
+        </li>
+        <li class="">
+            <a href="/contact.html"
+                class="opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
+                Liên hệ</a>
+        </li>
+    </ul>
+
+    <script src="/js/flowbite.min.js"></script>
+</body>
+
+</html>
