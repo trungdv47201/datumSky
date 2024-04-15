@@ -56,32 +56,27 @@
 
 <body>
     <ul class="flex font-medium flex-row gap-10 text-white list-active-line justify-center">
-        <li>
-            <div class="flex items-center gap-2 cursor-pointer" id="dropdownDelayService_ipad"
-                data-dropdown-toggle="dropdownService_ipad" data-dropdown-delay="500" data-dropdown-trigger="hover"
-                data-dropdown-placement="left" data-dropdown-offset-distance="-50" data-dropdown-offset-skidding="210">
+        <li class="menu-item relative">
+            <div class="flex items-center gap-2 cursor-pointer" id="dropdownDelayService_ipad">
                 <a
                     class="lang opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
                     Dịch vụ
                 </a>
             </div>
-            <div class="hidden sm:shadow-xl" id="dropdownService_ipad">
+            <div class="hidden sm:shadow-xl menu-dropdown absolute z-[1] top-[52px] left-[-250px]" id="dropdownService_ipad">
                 <ul aria-labelledby="dropdownDelayService_ipad"
                     class="bg-[#3163AF] text-white sm:border-l-4 sm:border-[#D9D9D9] submenu-item sm:py-10 lg:pt-10 sm:pt-6">
                     <li class="bg-[#3163AF] text-white">
                         <a class="sm:py-3 py-1 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
                             href="/branding.html">Branding</a>
                     </li>
-                    <li class="bg-[#3163AF] text-white dropdown">
-                        <div class="flex items-center gap-2 cursor-pointer w-full" id="dropdownDelayAdsNetwork_ipad"
-                            data-dropdown-toggle="dropdownAdsNetwork_ipad" data-dropdown-delay="100"
-                            data-dropdown-trigger="hover" data-dropdown-placement="right"
-                            data-dropdown-offset-distance="0" data-dropdown-offset-skidding="60">
+                    <li class="bg-[#3163AF] text-white menu-item">
+                        <div class="flex items-center gap-2 cursor-pointer w-full" id="dropdownDelayAdsNetwork_ipad">
                             <a
                                 class="w-full sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white">Ads
                                 Network </a>
                         </div>
-                        <div class="hidden sm:shadow-xl w-[150%] overflow-hidden" id="dropdownAdsNetwork_ipad">
+                        <div class="hidden menu-dropdown absolute left-[100%] z-[2] top-0 sm:shadow-xl w-[150%] overflow-hidden" id="dropdownAdsNetwork_ipad">
                             <ul class="w-full sm:bg-[#D9D9D9] text-black flex items-center overflow-hidden py-12 pt-14"
                                 aria-labelledby="dropdownDelayAdsNetwork_ipad">
                                 <div>
@@ -138,8 +133,6 @@
                 Liên hệ</a>
         </li>
     </ul>
-
-    <script src="/js/flowbite.min.js"></script>
 </body>
 
 </html>

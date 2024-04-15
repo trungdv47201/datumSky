@@ -56,32 +56,27 @@
 
 <body>
     <ul class="flex font-medium flex-row gap-10 text-white list-active-line justify-center">
-        <li>
-            <div class="flex items-center gap-2 cursor-pointer" id="dropdownDelayService"
-                data-dropdown-toggle="dropdownService" data-dropdown-delay="500" data-dropdown-trigger="hover"
-                data-dropdown-placement="left" data-dropdown-offset-distance="10" data-dropdown-offset-skidding="210">
+        <li class="menu-item relative">
+            <div class="flex items-center gap-2 cursor-pointer">
                 <a
                     class="lang opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block">
                     Dịch vụ
                 </a>
             </div>
-            <div class="hidden sm:shadow-xl" id="dropdownService">
+            <div class="absolute top-[50px] left-[-300px] hidden z-[1] sm:shadow-xl menu-dropdown" id="dropdownService">
                 <ul aria-labelledby="dropdownDelayService"
                     class="bg-[#3163AF] text-white sm:border-l-4 sm:border-[#D9D9D9] submenu-item sm:py-10 lg:pt-10 sm:pt-6">
                     <li class="bg-[#3163AF] text-white">
                         <a class="sm:py-3 py-1 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white"
                             href="/branding.html">Branding</a>
                     </li>
-                    <li class="bg-[#3163AF] text-white dropdown">
-                        <div class="flex items-center gap-2 cursor-pointer w-full" id="dropdownDelayAdsNetwork"
-                            data-dropdown-toggle="dropdownAdsNetwork" data-dropdown-delay="100"
-                            data-dropdown-trigger="hover" data-dropdown-placement="right"
-                            data-dropdown-offset-distance="0" data-dropdown-offset-skidding="63">
+                    <li class="bg-[#3163AF] text-white menu-item">
+                        <div class="flex items-center gap-2 cursor-pointer w-full" id="dropdownDelayAdsNetwork">
                             <a
                                 class="w-full sm:py-3 py-1 px-8 sm:pl-16 pl-8 sm:text-lg text-base block !text-nowrap relative menu-service after:bg-white">Ads
                                 Network </a>
                         </div>
-                        <div class="hidden sm:shadow-xl max-h-[360px] min-h-[360px] w-[200%] overflow-hidden"
+                        <div class="menu-dropdown absolute left-[100%] z-[2] top-0 hidden sm:shadow-xl max-h-[360px] min-h-[360px] w-[200%] overflow-hidden"
                             id="dropdownAdsNetwork">
                             <ul class="w-full sm:bg-[#D9D9D9] text-black flex items-center overflow-hidden"
                                 aria-labelledby="dropdownDelayAdsNetwork">
@@ -142,8 +137,6 @@
                 Liên hệ</a>
         </li>
     </ul>
-
-    <script src="/js/flowbite.min.js"></script>
 </body>
 
 </html>

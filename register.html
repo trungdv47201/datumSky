@@ -5,7 +5,7 @@
     <title>Register</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/custom.css" />
@@ -44,56 +44,57 @@
                                     <div class="img flex flex-col gap-4">
                                         <div>
                                             <input type="text" placeholder="Họ - Tên" id="name" name="name"
-                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full">
+                                                class="sm:text-lg text-sm border border-[#CFECE8] focus:outline-none py-2 advise placeholder:text-[#B7B7B7] text-center w-full">
                                         </div>
                                         <div>
                                             <input type="number" placeholder="Số điện thoại" id="phone" name="phone"
-                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full"
+                                                class="sm:text-lg text-sm border border-[#CFECE8] focus:outline-none py-2 advise placeholder:text-[#B7B7B7] text-center w-full"
                                                 pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}">
                                         </div>
                                         <div>
                                             <input type="email" placeholder="Nhập email tại đây" required="" id="email"
                                                 name="email"
-                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full">
+                                                class="sm:text-lg text-sm border border-[#CFECE8] focus:outline-none py-2 advise placeholder:text-[#B7B7B7] text-center w-full">
                                         </div>
                                         <div class="relative options-dropdown">
                                             <input type="text" placeholder="Gói dịch vụ" required="" id="service-pack"
                                                 name="service_pack"
-                                                class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] text-center w-full disabled cursor-default"
+                                                class="sm:text-lg text-sm border border-[#CFECE8] focus:outline-none py-2 advise placeholder:text-[#B7B7B7] text-center w-full disabled cursor-default"
                                                 readonly>
                                             <div class="absolute top-1/2 right-3 -translate-y-1/2">
                                                 <i class="fa-solid fa-chevron-down text-[#66CDF1]"></i>
                                             </div>
-                                            <div class="absolute options w-full border-[#CFECE8] border mt-1 hidden">
+                                            <div
+                                                class="absolute options w-full border border-[#CFECE8] focus:outline-none border mt-1 hidden">
                                                 <div class="sm:h-[133px] h-[109px] overflow-y-scroll" id="options">
                                                     <div class="item">
                                                         <input type="text" required="" value="Ads Network"
-                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
-                                                    <hr class="w-full border-[#CFECE8]">
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
                                                     <div class="item">
                                                         <input type="text" required="" value="SMS Marketing"
-                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
-                                                    <hr class="w-full border-[#CFECE8]">
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
                                                     <div class="item">
                                                         <input type="text" required="" value="Branding"
-                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
-                                                    <hr class="w-full border-[#CFECE8]">
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
                                                     <div class="item">
                                                         <input type="text" required="" value="Master Chanel"
-                                                            class="sm:text-lg border-0 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <textarea
-                                            class="sm:text-lg text-sm border-[#CFECE8] advise placeholder:text-[#B7B7B7] w-full resize-none"
+                                            class="sm:text-lg text-sm border border-[#CFECE8] focus:outline-none py-2 advise placeholder:text-[#B7B7B7] w-full resize-none"
                                             id="note" name="note" rows="3" placeholder="Để lại lời nhắn"></textarea>
                                         <button id="send-mail" type="button"
                                             class="button-effect relative overflow-hidden mt-3 w-full bg-[#3163AF] text-white flex justify-center items-center opensans-bold uppercase font-normal lg:tracking-[0.36em] tracking-[0.28em] lg:leading-[45px] leading-[36px] font-bold send-mail">
@@ -164,6 +165,7 @@
 
         send(params, "email-template.html");
     </script>
+
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'>
+    <link rel='stylesheet' href='/css/menu-effect.css'>
     <style>
         .button-effect {
             overflow: hidden;
@@ -20,9 +20,26 @@
         .button-effect:active {
             background: transparent;
         }
+
+        .menu-item:hover>.menu-dropdown {
+            display: block;
+        }
+
+        .menu-item::after {
+            position: absolute;
+            content: "";
+            width: 360px;
+            height: 100px;
+            left: -300px;
+            top: 0;
+            display: none;
+        }
+
+        .menu-item:hover::after {
+            display: block !important;
+        }
     </style>
 </head>
-
 
 <body>
     <header class="fixed z-[999] top-0 start-0 w-full shadow-[0px_4px_4px_0px_#00000026] opensans-semi-bold">
@@ -35,14 +52,22 @@
                 </a>
                 <div class="md:hidden flex items-center">
                     <button type="button" id="btn-menu-mobile" class="text-[#66CDF1] text-xl p-[0.5rem]">
-                        <i class="fa-solid fa-bars"></i>
+                        <div class="menu-container mt-1">
+                            <div class="bars"><span></span><span></span><span></span>
+                                <div class="other-bar"></div>
+                            </div>
+                        </div>
                     </button>
                 </div>
 
                 <div class="md:flex hidden items-center gap-6">
                     <div class="lg:hidden flex items-center order-1">
                         <button type="button" id="btn-menu-ipad" class="text-[#66CDF1] text-xl p-[0.5rem]">
-                            <i class="fa-solid fa-bars"></i>
+                            <div class="menu-container mt-1">
+                                <div class="bars"><span></span><span></span><span></span>
+                                    <div class="other-bar"></div>
+                                </div>
+                            </div>
                         </button>
                     </div>
                     <div class="opensans-regular lg:flex hidden items-center" id="menu-content"></div>
@@ -90,11 +115,13 @@
             $("#menu-mobile-content").load("/menu-mobile.html");
 
             $('#btn-menu-ipad').on('click', function () {
+                $(".menu-container").toggleClass('is-menu-open');
                 $('#menu-ipad-content').removeClass("!hidden");
                 $('#menu-ipad-content').toggle("");
             });
 
             $('#btn-menu-mobile').on('click', function () {
+                $(".menu-container").toggleClass('is-menu-open');
                 $("body").toggleClass('overflow-hidden');
                 $('#menu-mobile-content').removeClass("!hidden");
                 $('#menu-mobile-content').toggle("");
@@ -107,9 +134,9 @@
             $('#menu-mobile-content').addClass("!hidden");
             $("#menu-mobile-content").css("display", "none");
             $("body").removeClass('overflow-hidden');
+            $(".menu-container").removeClass('is-menu-open');
         });
     </script>
-
 </body>
 
 </html>
