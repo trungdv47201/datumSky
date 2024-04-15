@@ -388,7 +388,7 @@ input[type="number"] {
   outline-offset: 0.05em;
 }
 
-owrap-imp.text-nortant {
+.text-nowrap-important {
   text-wrap: nowrap !important;
   white-space: nowrap !important;
 }
