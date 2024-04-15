@@ -62,13 +62,13 @@
                                                 class="sm:text-lg text-sm border border-[#CFECE8] focus:outline-none py-2 advise placeholder:text-[#B7B7B7] text-center w-full disabled cursor-default"
                                                 readonly>
                                             <div class="absolute top-1/2 right-3 -translate-y-1/2">
-                                                <i class="fa-solid fa-chevron-down text-[#66CDF1]"></i>
+                                                <i class="fa-solid fa-chevron-down rotate text-[#66CDF1]"></i>
                                             </div>
                                             <div
-                                                class="absolute options w-full border border-[#CFECE8] focus:outline-none border mt-1 hidden">
-                                                <div class="sm:h-[133px] h-[109px] overflow-y-scroll" id="options">
+                                                class="absolute options w-full border border-[#CFECE8] focus:outline-none border mt-1 hidden z-[2]">
+                                                <div class="sm:h-[227px] h-[150px] overflow-y-scroll" id="options">
                                                     <div class="item">
-                                                        <input type="text" required="" value="Ads Network"
+                                                        <input type="text" required="" value="Branding"
                                                             class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
@@ -80,13 +80,43 @@
                                                     </div>
                                                     <hr class="w-full border border-[#CFECE8] focus:outline-none">
                                                     <div class="item">
-                                                        <input type="text" required="" value="Branding"
+                                                        <input type="text" required="" value="Performance Marketing"
                                                             class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
                                                     <hr class="w-full border border-[#CFECE8] focus:outline-none">
                                                     <div class="item">
                                                         <input type="text" required="" value="Master Chanel"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Push Notification Network"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Video Ads"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Facebook Ads"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Google Ads"
+                                                            class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
+                                                            readonly>
+                                                    </div>
+                                                    <hr class="w-full border border-[#CFECE8] focus:outline-none">
+                                                    <div class="item">
+                                                        <input type="text" required="" value="Tiktok Ads"
                                                             class="sm:text-lg border-0 py-2 text-sm w-full disabled cursor-default px-10 bg-[#F5F6F6] text-[#B7B7B7] hover:bg-[#66CDF1] hover:text-white"
                                                             readonly>
                                                     </div>
@@ -124,7 +154,7 @@
 
         $('.options-dropdown').on("click", function () {
             $(this).find(".options").toggleClass("hidden");
-            $(this).find("i").toggleClass("rotate-180");
+            $(this).find("i").toggleClass("down");
         });
 
         $('.item').on("click", function () {
