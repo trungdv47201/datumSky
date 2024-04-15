@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html>
-<style>
-    .button-effect {
-        overflow: hidden;
-    }
 
-    .button-effect a {
-        transition: all 0.45s ease-Out;
-    }
+<head>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css'>
+    <style>
+        .button-effect {
+            overflow: hidden;
+        }
 
-    .button-effect:hover {
-        background: linear-gradient(270deg, #3163af 0%, #7c67d1 51.5%, #66cdf1 100%);
-        transition: all 0.5s ease-Out;
-    }
+        .button-effect a {
+            transition: all 0.45s ease-Out;
+        }
 
-    .button-effect:active {
-        background: transparent;
-    }
-</style>
+        .button-effect:hover {
+            background: linear-gradient(270deg, #3163af 0%, #7c67d1 51.5%, #66cdf1 100%);
+            transition: all 0.5s ease-Out;
+        }
+
+        .button-effect:active {
+            background: transparent;
+        }
+    </style>
+</head>
+
 
 <body>
     <header class="fixed z-[999] top-0 start-0 w-full shadow-[0px_4px_4px_0px_#00000026] opensans-semi-bold">
@@ -25,7 +30,7 @@
             <div
                 class="xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md flex items-center justify-between">
                 <a href="/index.html" class="flex items-center">
-                    <img src="/images/home/logo-white.svg" class="sm:py-2 sm:h-[60px] h-[40px]" alt="datumSky Logo"
+                    <img src="/images/home/logo-white.svg" class="sm:py-2 py-3 h-[60px]" alt="datumSky Logo"
                         id="logo" />
                 </a>
                 <div class="md:hidden flex items-center">

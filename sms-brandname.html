@@ -9,26 +9,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/custom.css" />
+
+    <style>
+        .sms-brandname-shadow {
+            box-shadow: 0px 4px 4px 0px #00000040 inset;
+        }
+    </style>
 </head>
 
 <body class="text-white bg-[#F5F6F6]">
     <div id="header-content"></div>
 
     <section>
-        <div class="relative sm:top-[60px] top-[40px] left-0 sm:pb-[60px] pb-[40px]">
+        <div class="relative top-[60px] left-0 pb-[60px]">
+            <div class="sm:hidden block">
+                <img src="./images/sms-brandname/banner-mobi.svg" class="w-full" />
+            </div>
             <div class="text-white absolute sm:top-[45%] top-[40%] left-0 -translate-y-1/2 w-full">
                 <div
                     class="relative xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md">
-                    <div class="lg:max-w-[36rem] md:max-w-[38rem] max-w-[34rem] md:ml-24">
+                    <div
+                        class="lg:max-w-[36rem] md:max-w-[38rem] max-w-[34rem] md:ml-24 flex flex-col items-center sm:items-start text-center sm:text-left gap-2">
                         <div
-                            class="uppercase lg:text-6xl md:text-4xl sm:text-2xl text-lg text-white utm-aurora !text-nowrap">
+                            class="uppercase lg:text-6xl md:text-5xl sm:text-4xl text-3xl text-white utm-aurora !text-nowrap">
                             SMS BRANDNAME
                         </div>
                         <div
-                            class="text-white lg:w-3/4 sm:w-2/3 w-full md:mt-12 sm:mt-4 lg:text-3xl md:text-xl sm:text-base text-sm uppercase">
+                            class="text-white lg:w-3/4 sm:w-2/3 w-[14rem] md:mt-12 sm:mt-4 lg:text-3xl md:text-xl text-base uppercase">
                             Dịch vụ SMS thương hiệu số 01 cho doanh nghiệp
                         </div>
-                        <div class="hidden sm:block text-white mt-2 lg:text-lg md:text-base text-sm">
+                        <div class="text-white mt-2 lg:text-lg md:text-base text-sm w-[22rem] sm:w-[unset]">
                             Sử dụng đơn giản, dễ dàng ngay trên Web. Hỗ trợ hiển thị tên thương hiệu (Brandname) Tích
                             hợp
                             được với Website, phần mềm sẵn có của doanh nghiệp thông qua API.
@@ -39,15 +49,14 @@
                                 <div class="circle"></div>
                                 <div class="relative z-[1] flex items-center gap-2">
                                     <a href="register.html">Đăng ký ngay</a>
-                                    <img src="./images/home/nexticon.svg" alt=""
-                                        class="sm:w-[unset] w-6">
+                                    <img src="./images/home/nexticon.svg" alt="" class="sm:w-[unset] w-6">
                                 </div>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <img src="./images/sms-brandname/banner.svg" class="w-full" />
+            <img src="./images/sms-brandname/banner.svg" class="w-full sm:block hidden" />
         </div>
     </section>
 
@@ -61,13 +70,16 @@
                         <div class="uppercase lg:text-4xl md:text-3xl sm:text-2xl text-xl text-center">tính năng</div>
                         <div class="flex flex-col lg:mt-16 mt-8">
                             <div
-                                class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-20 md:gap-x-16 sm:gap-x-12 gap-x-10 md:gap-y-10 gap-y-8 md:ml-0 ml-3">
+                                class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-x-20 md:gap-x-16 sm:gap-x-12 gap-x-10 md:gap-y-10 gap-y-8 md:ml-0 sm:ml-3">
                                 <div class="sm:max-w-sm">
-                                    <div class="sm:block flex gap-x-2 items-end">
+                                    <div class="sm:block flex gap-x-2 items-end justify-between">
                                         <div class="relative">
                                             <span
-                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px]"></span>
-                                            <span class="lg:text-5xl md:text-4xl text-2xl block opensans-bold">01</span>
+                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px] sm:block hidden"></span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:hidden block opensans-bold bg-gradient-to-b from-[#79D4D0] to-[#40B9CF] border-2 rounded-[10px] px-2 mb-2 sms-brandname-shadow">01</span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:block hidden opensans-bold">01</span>
                                         </div>
                                         <h5
                                             class="my-1 lg:text-2xl md:text-xl sm:text-lg text-base opensans-semi-bold text-[#66CDF1] uppercase">
@@ -78,22 +90,33 @@
                                     <div
                                         class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-white sm:text-base text-sm">
                                         <p class="uppercase">THAY ĐẦU SỐ ĐIỆN THOẠI BẰNG TÊN THƯƠNG HIỆU</p>
-                                        <p class="md:text-base text-sm">
-                                            <span class="text-[#71B415] font-bold">Gia tăng nhận diện</span>, giúp
-                                            thương hiệu định vị trong tâm trí khách hàng.
-                                        </p>
-                                        <p class="md:text-base text-sm">
-                                            <span class="text-[#71B415] font-bold">Tỷ lệ tới 99%</span>
-                                            khách hàng nhận và đọc tin nhắn.
-                                        </p>
+                                        <div class="flex items-start gap-2">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                <span class="text-[#71B415] font-bold">Gia tăng nhận diện</span>, giúp
+                                                thương hiệu định vị trong tâm trí khách hàng.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2 mt-3">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                <span class="text-[#71B415] font-bold">Tỷ lệ tới 99%</span>
+                                                khách hàng nhận và đọc tin nhắn.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sm:max-w-sm">
-                                    <div class="sm:block flex gap-x-2 items-end">
+                                    <div class="sm:block flex gap-x-2 items-end justify-between">
                                         <div class="relative">
                                             <span
-                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px]"></span>
-                                            <span class="lg:text-5xl md:text-4xl text-2xl block opensans-bold">02</span>
+                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px] sm:block hidden"></span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl block sm:hidden opensans-bold bg-gradient-to-b from-[#79D4D0] to-[#40B9CF] border-2 rounded-[10px] px-2 mb-2 sms-brandname-shadow">02</span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:block hidden opensans-bold">02</span>
                                         </div>
                                         <h5
                                             class="my-1 lg:text-2xl md:text-xl sm:text-lg text-base opensans-semi-bold text-[#66CDF1] uppercase">
@@ -104,21 +127,35 @@
                                     <div
                                         class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-white sm:text-base text-sm">
                                         <p class="uppercase">GỬI HÀNG LOẠT TIN NHẮN KHÔNG BỊ CHẶN SPAM</p>
-                                        <p class="md:text-base text-sm">
-                                            Cá nhân hóa thông điệp quảng cáo đến từng khách hàng.
-                                        </p>
-                                        <p class="md:text-base text-sm">
-                                            Gửi SMS chương trình ưu đãi, khuyến mãi, giới thiệu sản phẩm, quảng bá sự
-                                            kiện hàng loạt mà không bị chặn bán spam.
-                                        </p>
+
+                                        <div class="flex items-start gap-2">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Cá nhân hóa thông điệp quảng cáo đến từng khách hàng.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2 mt-3">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Gửi SMS chương trình ưu đãi, khuyến mãi, giới thiệu sản phẩm, quảng bá
+                                                sự
+                                                kiện hàng loạt mà không bị chặn bán spam.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sm:max-w-sm">
-                                    <div class="sm:block flex gap-x-2 items-start">
+                                    <div
+                                        class="sm:block flex gap-x-12 items-end justify-between sm:text-left text-right">
                                         <div class="relative">
                                             <span
-                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px]"></span>
-                                            <span class="lg:text-5xl md:text-4xl text-2xl block opensans-bold">03</span>
+                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px] sm:block hidden"></span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl block sm:hidden opensans-bold bg-gradient-to-b from-[#79D4D0] to-[#40B9CF] border-2 rounded-[10px] px-2 mb-2 sms-brandname-shadow">03</span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:block hidden opensans-bold">03</span>
                                         </div>
                                         <h5
                                             class="my-1 lg:text-2xl md:text-xl sm:text-lg text-base opensans-semi-bold text-[#66CDF1] uppercase">
@@ -129,23 +166,35 @@
                                     <div
                                         class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-white sm:text-base text-sm">
                                         <p class="uppercase">Đầu cầu kết nối khăng khít khách hàng và doanh nghiệp</p>
-                                        <p class="md:text-base text-sm">
-                                            Gửi SMS thông báo biến động số dư tài khoản, thông báo hóa đơn, thông báo
-                                            lịch học, học phí.
-                                        </p>
-                                        <p class="md:text-base text-sm">
-                                            Lên lịch tự động gửi lời cảm ơn, tri ân khách hàng nhân dịp đặc biệt (sinh
-                                            nhật, ngày lễ, Tết...)
-                                        </p>
+                                        <div class="flex items-start gap-2">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Gửi SMS thông báo biến động số dư tài khoản, thông báo hóa đơn, thông
+                                                báo
+                                                lịch học, học phí.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2 mt-3">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Lên lịch tự động gửi lời cảm ơn, tri ân khách hàng nhân dịp đặc biệt
+                                                (sinh
+                                                nhật, ngày lễ, Tết...)
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sm:max-w-sm">
-                                    <div class="sm:block flex gap-x-2 items-end">
-
+                                    <div class="sm:block flex gap-x-2 items-end justify-between">
                                         <div class="relative">
                                             <span
-                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px]"></span>
-                                            <span class="lg:text-5xl md:text-3xl text-2xl block opensans-bold">04</span>
+                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px] sm:block hidden"></span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl block sm:hidden opensans-bold bg-gradient-to-b from-[#79D4D0] to-[#40B9CF] border-2 rounded-[10px] px-2 mb-2 sms-brandname-shadow">04</span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:block hidden opensans-bold">04</span>
                                         </div>
                                         <h5
                                             class="my-1 lg:text-2xl md:text-xl sm:text-lg text-base opensans-semi-bold text-[#66CDF1] uppercase">
@@ -157,22 +206,33 @@
                                         class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-white sm:text-base text-sm">
                                         <p class="uppercase">SỬ DỤNG VỊ TRÍ HIỆN TẠI CỦA KHÁCH HÀNG ĐỂ GỬI SMS HIỆU QUẢ
                                         </p>
-                                        <p class="md:text-base text-sm">
-                                            Gửi tin nhắn target địa lý, chính xác không gian, thời gian và địa điểm.
-                                        </p>
-                                        <p class="md:text-base text-sm">
-                                            Phù hợp với những doanh nghiệp F&B, bán hàng thời trang muốn thu hút khách
-                                            hàng mua sắm trực tiếp tại cửa hàng.
-                                        </p>
+                                        <div class="flex items-start gap-2">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Gửi tin nhắn target địa lý, chính xác không gian, thời gian và địa điểm.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2 mt-3">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Phù hợp với những doanh nghiệp F&B, bán hàng thời trang muốn thu hút
+                                                khách
+                                                hàng mua sắm trực tiếp tại cửa hàng.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sm:max-w-sm">
-                                    <div class="sm:block flex gap-x-2 items-end">
-
+                                    <div class="sm:block flex gap-x-2 items-end justify-between">
                                         <div class="relative">
                                             <span
-                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px]"></span>
-                                            <span class="lg:text-5xl md:text-4xl text-2xl block opensans-bold">05</span>
+                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px] sm:block hidden"></span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl block sm:hidden opensans-bold bg-gradient-to-b from-[#79D4D0] to-[#40B9CF] border-2 rounded-[10px] px-2 mb-2 sms-brandname-shadow">05</span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:block hidden opensans-bold">05</span>
                                         </div>
                                         <h5
                                             class="my-1 lg:text-2xl md:text-xl sm:text-lg text-base opensans-semi-bold text-[#66CDF1] uppercase">
@@ -183,21 +243,31 @@
                                     <div
                                         class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-white sm:text-base text-sm">
                                         <p class="uppercase">Gửi SMS cho khách hàng dựa trên các tiêu chí</p>
-                                        <p class="md:text-base text-sm">
-                                            Nhắm mục tiêu chính xác dựa trên đặc điểm chân dung khách hàng.
-                                        </p>
-                                        <p class="md:text-base text-sm">
-                                            Cắt giảm các loại chỉ phí testing Marketing không cần thiết.
-                                        </p>
+                                        <div class="flex items-start gap-2">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Nhắm mục tiêu chính xác dựa trên đặc điểm chân dung khách hàng.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2 mt-3">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Cắt giảm các loại chỉ phí testing Marketing không cần thiết.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="sm:max-w-sm">
-                                    <div class="sm:block flex gap-x-2 items-end">
-
+                                    <div class="sm:block flex gap-x-2 items-end justify-between">
                                         <div class="relative">
                                             <span
-                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px]"></span>
-                                            <span class="lg:text-5xl md:text-4xl text-2xl block opensans-bold">06</span>
+                                                class="absolute mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full top-1/2 -translate-y-1/2 sm:-left-[28px] -left-[18px] sm:block hidden"></span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl block sm:hidden opensans-bold bg-gradient-to-b from-[#79D4D0] to-[#40B9CF] border-2 rounded-[10px] px-2 mb-2 sms-brandname-shadow">06</span>
+                                            <span
+                                                class="lg:text-5xl md:text-4xl text-2xl sm:block hidden opensans-bold">06</span>
                                         </div>
                                         <h5
                                             class="my-1 lg:text-2xl md:text-xl sm:text-lg text-base opensans-semi-bold text-[#66CDF1] uppercase">
@@ -208,15 +278,25 @@
                                     <div
                                         class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-white sm:text-base text-sm">
                                         <p class="uppercase">Gửi SMS trực quan, sinh động chứa hình ảnh, video...</p>
-                                        <p class="md:text-base text-sm">
-                                            Hỗ trợ gửi tin nhắn theo nhiều loại định dạng khác nhau, bao gồm hình ảnh và
-                                            âm thanh.
-                                        </p>
-                                        <p class="md:text-base text-sm">
-                                            Tác động trực tiếp vào cảm xúc khiến khách hàng đưa ra quyết định mua hàng
-                                            nhanh
-                                            chóng.
-                                        </p>
+                                        <div class="flex items-start gap-2">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Hỗ trợ gửi tin nhắn theo nhiều loại định dạng khác nhau, bao gồm hình
+                                                ảnh và
+                                                âm thanh.
+                                            </p>
+                                        </div>
+                                        <div class="flex items-start gap-2 mt-3">
+                                            <span
+                                                class="mt-1 sm:min-w-4 sm:min-h-4 sm:w-4 sm:h-4 min-w-2 min-h-2 w-2 h-2 bg-[#5ACAE2] rounded-full block sm:hidden"></span>
+                                            <p class="md:text-base text-sm p-0 m-0">
+                                                Tác động trực tiếp vào cảm xúc khiến khách hàng đưa ra quyết định mua
+                                                hàng
+                                                nhanh
+                                                chóng.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -297,7 +377,8 @@
                             <div
                                 class="prose sm:prose-md prose-sm text-justify sm:mt-4 mt-1 leading-5 text-[#666666] md:text-base text-sm">
                                 <p>
-                                    Hồ sơ brandname dễ dàng hơn với hệ thống DatumSky, hỗ trợ các Brandname có sẵn nếu khách hàng chưa đủ điều kiện đăng ký.
+                                    Hồ sơ brandname dễ dàng hơn với hệ thống DatumSky, hỗ trợ các Brandname có sẵn nếu
+                                    khách hàng chưa đủ điều kiện đăng ký.
                                 </p>
                             </div>
                         </div>
@@ -353,7 +434,9 @@
                                     class="relative sm:absolute sm:mb-0 mb-6 lg:top-0 md:-top-2 lg:-left-[16rem] md:-left-[13rem] left-0 top-0">
                                     <div class="relative lg:w-[240px] md:w-[240px]">
                                         <span
-                                            class="absolute min-w-3 min-h-3 w-3 h-3 bg-[#5ACAE2] rounded-full top-[0.4rem] md:-right-[28px] md:left-[unset] -left-[28px]"></span>
+                                            class="absolute sm:min-w-3 sm:min-h-3 sm:w-3 sm:h-3 sm:bg-[#5ACAE2] rounded-full md:-right-[28px] md:left-[unset] top-[-0.4rem] sm:-left-[28px] left-[-36px]">
+                                            <img src="/images/sms-brandname/checked.svg" alt="">
+                                        </span>
                                         <span class="md:text-right text-left block sm:text-base text-sm">
                                             Top nhà cung cấp SMS Brandname uy tín lớn nhất Việt Nam
                                         </span>
@@ -363,7 +446,9 @@
                                     class="relative sm:absolute sm:mb-0 mb-6 lg:top-[25%] md:top-[27%] lg:-left-[20rem] md:-left-[14rem] left-0 top-[18%]">
                                     <div class="relative lg:w-[240px] md:w-[200px]">
                                         <span
-                                            class="absolute min-w-3 min-h-3 w-3 h-3 bg-[#5ACAE2] rounded-full top-[0.4rem] md:-right-[28px] md:left-[unset] -left-[28px]"></span>
+                                            class="absolute sm:min-w-3 sm:min-h-3 sm:w-3 sm:h-3 sm:bg-[#5ACAE2] rounded-full md:-right-[28px] md:left-[unset] top-[-0.4rem] sm:-left-[28px] left-[-36px]">
+                                            <img src="/images/sms-brandname/checked.svg" alt="">
+                                        </span>
                                         <span class="md:text-right text-left block sm:text-base text-sm">
                                             Sở hữu hệ sinh thái đa dạng các dịch vụ Mobile Marketing
                                         </span>
@@ -373,7 +458,9 @@
                                     class="relative sm:absolute sm:mb-0 mb-6 lg:top-[50%] md:top-[54%] lg:-left-[21rem] md:-left-[15rem] left-0 top-[36%]">
                                     <div class="relative lg:w-[240px] md:w-[200px]">
                                         <span
-                                            class="absolute min-w-3 min-h-3 w-3 h-3 bg-[#5ACAE2] rounded-full top-[0.4rem] md:-right-[28px] md:left-[unset] -left-[28px]"></span>
+                                            class="absolute sm:min-w-3 sm:min-h-3 sm:w-3 sm:h-3 sm:bg-[#5ACAE2] rounded-full md:-right-[28px] md:left-[unset] top-[-0.4rem] sm:-left-[28px] left-[-36px]">
+                                            <img src="/images/sms-brandname/checked.svg" alt="">
+                                        </span>
                                         <span class="md:text-right text-left block sm:text-base text-sm">
                                             Kết nối trực tiếp với các nhà mạng của Việt Nam
                                         </span>
@@ -383,7 +470,9 @@
                                     class="relative sm:absolute sm:mb-0 mb-6 lg:top-[75%] md:top-[81%] lg:-left-[18rem] md:-left-[15rem] left-0 top-[54%]">
                                     <div class="relative lg:w-[240px] md:w-[240px]">
                                         <span
-                                            class="absolute min-w-3 min-h-3 w-3 h-3 bg-[#5ACAE2] rounded-full top-[0.4rem] md:-right-[28px] md:left-[unset] -left-[28px]"></span>
+                                            class="absolute sm:min-w-3 sm:min-h-3 sm:w-3 sm:h-3 sm:bg-[#5ACAE2] rounded-full md:-right-[28px] md:left-[unset] top-[-0.4rem] sm:-left-[28px] left-[-36px]">
+                                            <img src="/images/sms-brandname/checked.svg" alt="">
+                                        </span>
                                         <span class="md:text-right text-left block sm:text-base text-sm">
                                             Tạo đơn hàng online. Hỗ trợ kết nối theo nhiều hình thức, dễ dàng tương
                                             thích
@@ -395,7 +484,8 @@
                                     class="relative sm:absolute sm:mb-0 mb-6 lg:top-[25%] md:top-[20%] lg:-right-[18rem] md:-right-[15rem] md:left-[unset] left-0 top-[72%]">
                                     <div class="relative lg:w-[240px] md:w-[215px]">
                                         <span
-                                            class="absolute min-w-3 min-h-3 w-3 h-3 bg-[#5ACAE2] rounded-full top-[0.4rem] -left-[28px]"></span>
+                                            class="sm:block absolute sm:min-w-3 sm:min-h-3 sm:w-3 sm:h-3 sm:bg-[#5ACAE2] rounded-full sm:top-[0.4rem] top-[-0.4rem] sm:-left-[28px] left-[-36px]">
+                                            <img src="/images/sms-brandname/checked.svg" alt=""></span>
                                         <span class="text-left block sm:text-base text-sm">
                                             Đem lại khả năng nhận diện thương hiệu uy tín. Định hướng sự chú ý của khách
                                             hàng vào các sự kiện, hoạt động
@@ -406,14 +496,15 @@
                                     class="relative sm:absolute sm:mb-0 mb-6 md:top-[64%] lg:-right-[18rem] md:-right-[14rem] md:left-[unset] left-0 top-[90%]">
                                     <div class="relative lg:w-[240px] md:w-[200px]">
                                         <span
-                                            class="absolute min-w-3 min-h-3 w-3 h-3 bg-[#5ACAE2] rounded-full top-[0.4rem] -left-[28px]"></span>
+                                            class="sm:block absolute sm:min-w-3 sm:min-h-3 sm:w-3 sm:h-3 sm:bg-[#5ACAE2] rounded-full sm:top-[0.4rem] top-[-0.4rem] sm:-left-[28px] left-[-36px]">
+                                            <img src="/images/sms-brandname/checked.svg" alt=""></span>
                                         <span class="text-left block sm:text-base text-sm">
                                             Công ty viễn thông kết hợp công nghệ
                                         </span>
                                     </div>
                                 </div>
                                 <img src="./images/sms-brandname/sms-brandname-3.svg" alt=""
-                                    class="xl:w-auto lg:w-[360px] md:w-[280px] sm:relative absolute sm:top-[unset] top-1/2 sm:left-[unset] left-1/2 sm:translate-x-[unset] -translate-x-1/2 sm:translate-y-[unset] -translate-y-1/2 z-[-1]">
+                                    class="sm:block hidden xl:w-auto lg:w-[360px] md:w-[280px] sm:relative absolute sm:top-[unset] top-1/2 sm:left-[unset] left-1/2 sm:translate-x-[unset] -translate-x-1/2 sm:translate-y-[unset] -translate-y-1/2 z-[-1]">
                             </div>
                         </div>
                     </div>
