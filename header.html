@@ -55,7 +55,7 @@
 
 <body>
     <header class="fixed z-[999] top-0 start-0 w-full shadow-[0px_4px_4px_0px_#00000026] opensans-semi-bold">
-        <nav class="bg-[#3163AF] relative">
+        <nav class="bg-[#3163AF] relative" id="nav">
             <div
                 class="xl:px-32 lg:px-20 md:px-12 px-6 mx-auto lg:max-w-screen-xl md:max-w-screen-lg sm:max-w-screen-md flex items-center justify-between">
                 <a href="/index.html" class="flex items-center">
@@ -148,6 +148,24 @@
             $("body").removeClass('overflow-hidden');
             $(".menu-container").removeClass('is-menu-open');
         });
+
+        document.addEventListener('click', function (event) {
+            var nav = document.getElementById('nav');
+            if(nav.contains(event.target)) {
+               return;
+            }
+            const menu = $('#menu-mobile-content');
+            console.log(menu.css('display'));
+            if (menu.css('display') == 'block') {
+                $('#menu-ipad-content').addClass("!hidden");
+                $("#menu-ipad-content").css("display", "none");
+                $('#menu-mobile-content').addClass("!hidden");
+                $("#menu-mobile-content").css("display", "none");
+                $("body").removeClass('overflow-hidden');
+                $(".menu-container").removeClass('is-menu-open');
+            }
+        });
+
     </script>
 </body>
 

@@ -184,7 +184,6 @@
                 el: '.swiper-pagination',
                 clickable: true,
                 renderBullet: function (index, className, total) {
-                    console.log(this)
                     if (index == (this.slides.length / this.loopedSlides - 1)) {
                         return '<span class="relative button-white-border !block !border !border-[#66CDF1] sm:!w-11 sm:!h-11 !w-8 !h-8 !flex !justify-center !items-center !rounded-full sm:!text-xl !text-lg !font-black !opacity-[0.9] !bg-transparent !font-[' + 'opensans-bold' + '] ' + className + '">' + (index + 1) + "</span>";
                     }
