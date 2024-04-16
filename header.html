@@ -120,7 +120,7 @@
         </nav>
     </header>
 
-    <div class="content fixed sm:bottom-0 bottom-[4rem] right-[1.5rem] z-[100000] cursor-pointer" id="phone-volume">
+    <div class="content fixed sm:bottom-0 bottom-0 right-[1.5rem] z-[100000] cursor-pointer" id="phone-volume">
         <a href="/register.html">
             <div class="spinner-wrap relative">
                 <div class="spinner-item"></div>
@@ -135,6 +135,14 @@
     </div>
 
     <script>
+        window.onscroll = function (ev) {
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 20) {
+                $('#phone-volume').addClass("bottom-[3.5rem]")
+            } else{
+                $('#phone-volume').removeClass("bottom-[3.5rem]")
+            }
+        };
+        
         $(function () {
             $("#menu-content").load("/menu.html");
             $("#menu-ipad-content").load("/menu-ipad.html");
