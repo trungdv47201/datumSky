@@ -63,16 +63,16 @@
                 </a>
                 <img src="/images/facebook-ads/right-arrow.svg" alt="" class="rotate-90 rotate w-[16px] h-[16px]">
             </div>
-            <div class="hidden sm:shadow-xl pt-[1rem]" id="dropdownService_mobile">
-                <ul class="bg-[#3163AF] text-white sm:border-l-4 sm:border-[#D9D9D9] submenu-item">
+            <div class="hidden pt-[1rem]" id="dropdownService_mobile">
+                <ul class="bg-[#3163AF] text-white submenu-item">
                     <li class="bg-[#3163AF] text-white">
-                        <a class="sm:py-3 py-1 sm:text-lg text-sm !text-nowrap relative menu-service after:bg-white"
+                        <a class="sm:py-3 py-1 sm:text-base text-sm !text-nowrap relative menu-service after:bg-white"
                             href="/branding.html">Branding</a>
                     </li>
                     <li class="mt-1 bg-[#3163AF] text-white dropdown">
                         <div class="flex items-center gap-2 cursor-pointer justify-between"
                             id="ads-network-mobi-dropdown">
-                            <a class="sm:text-lg text-sm !text-nowrap relative menu-service after:bg-white">Ads
+                            <a class="sm:text-base text-sm !text-nowrap relative menu-service after:bg-white">Ads
                                 Network </a>
                             <img src="/images/facebook-ads/right-arrow.svg" alt=""
                                 class="rotate-90 rotate w-[16px] h-[16px]">
@@ -81,24 +81,24 @@
                             <ul class="sm:bg-[#D9D9D9] text-black flex items-center overflow-hidden pt-3 pb-2">
                                 <div class="border-l-2 border-white">
                                     <li class="relative sm:text-black text-white">
-                                        <a class="py-2 pl-4 sm:text-lg text-sm !text-nowrap relative"
+                                        <a class="py-2 pl-4 sm:text-base text-sm !text-nowrap relative"
                                             href="/push-notification.html">Push Notification
                                             Network</a>
                                     </li>
                                     <li class="mt-1 relative sm:text-black text-white">
-                                        <a class="py-2 pl-4 sm:text-lg text-sm !text-nowrap relative"
+                                        <a class="py-2 pl-4 sm:text-base text-sm !text-nowrap relative"
                                             href="/video-marketing.html">Video Ads</a>
                                     </li>
                                     <li class="mt-1 relative sm:text-black text-white">
-                                        <a class="py-2 pl-4 sm:text-lg text-sm !text-nowrap relative"
+                                        <a class="py-2 pl-4 sm:text-base text-sm !text-nowrap relative"
                                             href="/facebook-ads.html">Facebook Ads</a>
                                     </li>
                                     <li class="mt-1 relative sm:text-black text-white">
-                                        <a class="py-2 pl-4 sm:text-lg text-sm !text-nowrap relative"
+                                        <a class="py-2 pl-4 sm:text-base text-sm !text-nowrap relative"
                                             href="/google-ads.html">Google Ads</a>
                                     </li>
                                     <li class="mt-1 relative sm:text-black text-white">
-                                        <a class="py-2 pl-4 sm:text-lg text-sm !text-nowrap relative"
+                                        <a class="py-2 pl-4 sm:text-base text-sm !text-nowrap relative"
                                             href="/tiktok-ads.html">Tiktok Ads</a>
                                     </li>
                                 </div>
@@ -106,16 +106,16 @@
                         </div>
                     </li>
                     <li class="mt-1 bg-[#3163AF] text-white">
-                        <a class="sm:py-3 py-1 sm:text-lg text-sm !text-nowrap relative menu-service after:bg-white"
+                        <a class="sm:py-3 py-1 sm:text-base text-sm !text-nowrap relative menu-service after:bg-white"
                             href="/sms-brandname.html">SMS
                             Brandname</a>
                     </li>
                     <li class="mt-1 bg-[#3163AF] text-white">
-                        <a class="sm:py-3 py-1 sm:text-lg text-sm !text-nowrap relative menu-service after:bg-white"
+                        <a class="sm:py-3 py-1 sm:text-base text-sm !text-nowrap relative menu-service after:bg-white"
                             href="/performance-marketing.html">Performance Marketing</a>
                     </li>
                     <li class="mt-1 bg-[#3163AF] text-white">
-                        <a class="sm:py-3 py-1 sm:text-lg text-sm !text-nowrap relative menu-service after:bg-white"
+                        <a class="sm:py-3 py-1 sm:text-base text-sm !text-nowrap relative menu-service after:bg-white"
                             href="/master-channel.html">Master
                             Channel</a>
                     </li>
@@ -143,8 +143,8 @@
         <hr>
         <li class="cursor-pointer">
             <div class="flex items-center gap-2 cursor-pointer justify-between" id="language-mobile-dropdown">
-                <a
-                    class="opensans-regular block after:bg-white no-underline relative inline-block sm:text-lg text-base block cursor-pointer">
+                <a id="language-mobi"
+                    class="block after:bg-white no-underline relative inline-block sm:text-lg text-base block cursor-pointer">
                     Ngôn ngữ</a>
                 <img src="/images/facebook-ads/right-arrow.svg" alt="" class="rotate-90 rotate w-[16px] h-[16px]">
             </div>
@@ -162,8 +162,7 @@
         <hr>
         <li class="cursor-pointer">
             <div class="w-full text-white text-sm">
-                <h3
-                    class="lg:text-left font-normal uppercase text-base font-thin md:text-left sm:text-nowrap">
+                <h3 class="lg:text-left font-normal uppercase text-base font-thin md:text-left sm:text-nowrap">
                     Công ty Cổ phần DatumSKy</h3>
                 <div class="flex gap-x-2 mt-2 items-baseline">
                     <img src="/images/home/address.svg" alt="address">
@@ -209,6 +208,7 @@
         $('#language-mobile-dropdown').on('click', function () {
             $(this).find(".rotate").toggleClass("down");
             $('#language-mobile').toggle("");
+            $('#language-mobi').toggleClass("font-['opensans-bold']")
         });
 
         $('#ads-network-mobi-dropdown').on('click', function () {
