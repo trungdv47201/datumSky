@@ -336,7 +336,6 @@ input[type="number"] {
   background: #ffffff;
 }
 
-
 .button-bg-none {
   --b: 2px;
   /* border thickness */
@@ -418,4 +417,101 @@ input[type="number"] {
 .button-white-border:active {
   background: #ffffff;
   color: #3163af !important;
+}
+
+.trin-trin {
+  animation-name: trin;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes trin {
+  from {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  20%,
+  32%,
+  44%,
+  56%,
+  68% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  23%,
+  35%,
+  47%,
+  59%,
+  71% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+  26%,
+  38%,
+  50%,
+  62%,
+  74% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+  29%,
+  41%,
+  53%,
+  65%,
+  77% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  80% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+.spinner-wrap {
+  position: relative;
+}
+.spinner-item {
+  border: 1px solid white;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  -webkit-animation: zoom 2s linear 0.75s infinite;
+          animation: zoom 2s linear 0.75s infinite;
+}
+.spinner-item--2 {
+  -webkit-animation-delay: 1.25s;
+          animation-delay: 1.25s;
+}
+.spinner-item--3 {
+  -webkit-animation-delay: 1.75s;
+          animation-delay: 1.75s;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+    opacity: 0;
+  }
 }
